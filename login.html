@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/estilos.css">
+   <title>Tp de Visualizaciones</title>
+</head>
+
+<body>
+
+   <div class="logo">
+      <img src="imagenes/Utnavellaneda2.png" alt="UTN Avellaneda" width="200">
+   </div>
+
+   <h2>Iniciar Sesion</h2>
+
+   <form action="php/enviar.php" method="post" enctype="multipart/form-data" autocomplete="on">
+
+
+      <label for="legajo">Legajo</label>
+      <input type="text" id="legajo" name="legajo" pattern="[0-9]+" title="Solo números">
+
+      <label for="contrasenia">Contraseña</label>
+      <input type="password" id="contrasenia" name="contrasenia">
+
+      <a href="recuperar-password.html" class="nav-link" target="_self">¿Olvidaste tu contraseña?</a>
+
+      <!--boton para enviar-->
+
+      <a href="./inicio/Inicio.html">INICIAR SESION</a>
+
+   </form>
+
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inicio</title>
+    <!-- Enlaza tu CSS si corresponde -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <header>
+        <img src="../../sources/logo.png">
+
+        <span>Inscripcion a materias</span>
+
+        <nav>
+            <span>ROMERO, YESICA ROMINA</span>
+            <a>Cerrar sesion</a>
+            <img src="../sources/fotologin">
+        </nav>
+    </header>
+
+    <div>
+
+        <span>Seleccione la materia</span>
+        <div>1</div>
+
+        <span>Seleccione comision</span>
+        <div>2</div>
+
+        <div>3</div>
+
+    </div>
+
+    <div id="primera-etapa">
+        <h1>Selecciona la materia</h1>
+
+        <input type="radio" id="1" name="mate">
+        <label for="1">Ingles tecnico I</label>
+
+        <input type="radio" id="2" name="mate">
+        <label for="2">Diseño grafico</label>
+
+        <input type="radio" id="3" name="mate">
+        <label for="3">Bases de datos</label>
+
+        <input type="submit" value="pasa-a-2">
+    </div>
+
+    <div id="segunda-etapa">
+        <h1>Selecciona la comision</h1>
+
+        <div>
+            <span>Turno:</span>
+
+            <input type="radio" id="a" name="turno">
+            <label for="a">Mañana</label>
+
+            <input type="radio" id="b" name="turno">
+            <label for="b">Tarde</label>
+
+            <input type="radio" id="c" name="turno">
+            <label for="c">Noche</label>
+        </div>
+
+        <div>
+            <label for="4">Bases de datos I</label>
+
+            <div>
+                <span>Comision: 987-977</span>
+                <span>Horario: Jueves 8 a 12</span>
+                <span>Modalidad: Semipresencial</span>
+                <input type="radio" id="4" name="comi">
+            </div>
+
+        </div>
+
+        <div>
+            <label for="5">Diseño grafico</label>
+
+            <div>
+                <span>Comision: 987-977</span>
+                <span>Horario: Jueves 8 a 12</span>
+                <span>Modalidad: Semipresencial</span>
+                <input type="radio" id="5" name="comi">
+            </div>
+
+        </div>
+
+        <div>
+            <label for="6">Ingles tecnico I</label>
+
+            <div>
+                <span>Comision: 987-977</span>
+                <span>Horario: Jueves 8 a 12</span>
+                <span>Modalidad: Semipresencial</span>
+                <input type="radio" id="6" name="comi">
+            </div>
+
+        </div>
+
+        <input type="submit" value="pasa-a-1">
+        <input type="submit" value="pasa-a-3">
+    </div>
+
+    <div id="tercera-etapa">
+
+        <img src="./src/tilde.png">
+
+        <h1>¡Te inscribiste con exito!</h1>
+
+        <a href="#">Descargar comprobante</a>
+        <a href="#">Volver al inicio</a>
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Enlaza tu JS si corresponde -->
+    <script src="script.js" defer></script>
+    <!--METER POPAPS POR INCRUSTACION DE JS-->
+
+</body>
+
+</html>
