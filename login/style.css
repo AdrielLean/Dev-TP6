@@ -1,0 +1,11 @@
+body{
+    background-image: url("src/fondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
