@@ -1,3 +1,4 @@
+
 body{
     background-image: url("src/fondo.png");
     background-size: cover;
@@ -21,9 +22,14 @@ html, body {
    display: flex;
    align-items: flex-start;
    justify-content: center;
-   padding-top: 50px ;
+   padding-top: 150px;
 }
 
+.logo{
+      display: flex;
+      margin-top: 10px;
+      margin-left: 10px;   
+}
 h2{
     text-align: center;
 }
@@ -35,6 +41,8 @@ h2{
    padding: 20px 40px 30px;
    border-radius: 25px;
    text-align: justify;
+   box-shadow: rgba(51, 51, 51, 0.2) 0px 4px 6px -1px;
+
    
 }
 
@@ -49,6 +57,7 @@ h2{
    align-items: flex-start;
    margin-top: 20px;
    padding-left: 8px; /* Mueve el texto un poco a la derecha */
+   box-shadow: rgba(51, 51, 51, 0.2) 0px 4px 6px -1px;
 }
 
 input {
@@ -81,7 +90,7 @@ input {
    width: 100%;
    display: flex;
    justify-content: center;
-   margin-top: -30px;
+   margin-top: -40px;
 }
 
 
@@ -106,5 +115,56 @@ input::placeholder{
    cursor: pointer;
    margin-top: 40px;
    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(51, 51, 51, 0.1) 0px 4px 6px -1px;
+}
 
+/* Responsive para tablets */
+@media (max-width: 900px) {
+   .contenido-form {
+      max-width: 90vw;
+      padding: 20px 40px 40px;
+      margin-top: 70px;
+   }
+   .container {
+      padding: 0;
+   }
+}
+
+/* Responsive para teléfonos */
+@media (max-width: 600px) {
+   .contenido-form {
+      max-width: 98vw;
+      padding: 20px 40px 40px;
+      border-radius: 12px;
+      margin-top: 50px;
+   }
+   .container {
+      padding: 0;
+   }
+   .boton {
+      width: 100%;
+      padding: 15px 0;
+      font-size: 15px;
+   }
+   .contenedor-texto {
+      padding-left: 2px;
+   }
+}
+
+/* Fondo especial para tablets */
+@media (max-width: 900px) {
+   body {
+      background-image: url("src/fondotelefonotablet.png");
+   }
+}
+
+/* Fondo especial para celulares */
+@media (max-width: 600px) {
+   body {
+      background-image: url("src/fondotelefonotablet.png");
+   }
 }
