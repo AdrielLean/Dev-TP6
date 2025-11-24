@@ -32,7 +32,7 @@ html, body {
 .logo-header {
     height: 70px;
     width: auto;
-    margin-left: -20px;
+    margin-left: -30px;
 }
 .titulo-header {
     margin-top: 30px;
@@ -71,4 +71,126 @@ html, body {
 }
 body{
     background-color: #f1faff;
+}
+
+.filtro{
+        margin-top: -20px;
+        /* Alinear con el inicio del título */
+        margin-left: calc(20px + 70px + 20px);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        margin-left: 130px;
+}
+.filtro select{
+        width: 60%;
+        max-width: 300px;
+        background-color: #9bbdd5; /* color solicitado */
+        padding: 8px 10px;
+        border: 1px solid rgba(0,0,0,0.08);
+        border-radius: 6px;
+        color: #033b49;
+}
+
+@media (max-width: 900px) {
+    .filtro select{ width: 70%; }
+}
+
+@media (max-width: 600px) {
+    .filtro{ margin-left: 4vw; }
+    .filtro select{ width: 92vw; max-width: none; }
+}
+
+/* Estilos para las tarjetas de materias */
+.container-carreras {
+        background: #dcebf4;
+        padding: 25px 20px;
+        border-radius: 6px;
+        margin: 18px 20px;
+        margin-left: 130px;
+        margin-right: 100px;
+        
+}
+.parte-de-arriba-carreras {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+}
+.titulo-materia h3 {
+        margin: 0;
+        font-size: 1.4rem;
+        color: #0b3b4b;
+}
+.meta-materia {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        font-size: 0.95rem;
+        
+}
+.meta-materia .calendario {
+        color: #016099;
+        text-decoration: underline;
+}
+.notas-materia {
+        margin-top: 20px;
+}
+
+/* Fixed bottom-left campus button (for current .campus-button link) */
+.campus-boton{
+    width: 200px;
+    text-align: center;
+    position: fixed;
+    right: 20px;
+    bottom: 70px;
+    background-color: #016099;
+    color: #fff; 
+    padding: 10px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: rgba(51, 51, 51, 0.1) 0px 4px 6px -1px;
+    margin-right: 100px
+}
+.campus-boton:hover{ background-color: #014a78 }
+
+/* Responsive: tablets (<=900px) */
+@media (max-width: 900px) {
+    .header-materias {
+        padding: 14px 20px;
+    }
+    .logo-header { height: 56px; margin-left: 0; }
+    .titulo-header { font-size: 1.6rem; margin-top: 6px; margin-left: 8px; }
+    .header-der { gap: 10px; }
+    .icono-usuario { width: 42px; height: 42px; }
+    .linea-fina { margin-left: 20px; margin-right: 20px; margin-bottom: 30px; }
+    .filtro { margin-left: 10vw; }
+    .container-carreras { margin-left: 10vw; margin-right: 10vw; padding: 18px; }
+    .meta-materia { gap: 12px; }
+    /* campus button smaller */
+    .campus-button, .campus-boton { left: 16px; bottom: 16px; padding: 8px 18px; }
+}
+
+/* Responsive: móviles (<=600px) hay que arreglar el padding y el header, problema para sofi del mañana*/
+@media (max-width: 600px) {
+    .header-materias {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 12px 14px;
+    }
+    .header-izq { gap: 12px; }
+    .logo-header { height: 48px; }
+    .titulo-header { font-size: 1.25rem; margin-top: 4px; margin-left: 0; }
+    .header-der { align-self: flex-end; gap: 8px; }
+    .icono-usuario { width: 38px; height: 38px; }
+    .linea-fina { margin-left: 12px; margin-right: 12px; margin-bottom: 18px; }
+    .filtro { margin-left: 4vw; }
+    .filtro select { width: 92vw; max-width: none; }
+    .container-carreras { margin-left: 4vw; margin-right: 4vw; padding: 14px; }
+    .parte-de-arriba-carreras { flex-direction: column; align-items: flex-start; }
+    .meta-materia { gap: 8px; font-size: 0.88rem; }
+    .campus-button, .campus-boton { left: 12px; bottom: 12px; padding: 8px 14px; font-size: 0.9rem; }
 }
