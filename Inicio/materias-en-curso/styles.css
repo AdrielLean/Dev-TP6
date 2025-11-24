@@ -82,6 +82,7 @@ body{
         align-items: flex-start;
         gap: 4px;
         margin-left: 110px;
+        
 }
 .filtro select{
         width: 60%;
@@ -91,6 +92,7 @@ body{
         border: 1px solid rgba(0,0,0,0.08);
         border-radius: 6px;
         color: #033b49;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.06);
 }
 
 /* Estilos para las tarjetas de materias */
@@ -101,6 +103,7 @@ body{
         margin: 18px 20px;
         margin-left: 110px;
         margin-right: 100px;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.06);
         
 }
 .parte-de-arriba-carreras {
@@ -130,43 +133,32 @@ body{
         margin-top: 20px;
 }
 
-/* Campus button: placed in the normal content flow under the materias */
-.campus-boton{
-    width: auto;
-    text-align: center;
-    position: static;
-    background-color: #016099;
-    color: #fff; 
-    padding: 10px 22px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 600;
-    box-shadow: rgba(51, 51, 51, 0.1) 0px 4px 6px -1px;
-    margin-right: 0;
-    display: inline-block;
-}
-.campus-boton:hover{ background-color: #014a78 }
 
 /* Ensure the button sits under the courses, aligned with the content start */
 .content .boton-container {
     display: flex;
     justify-content: flex-start;
-    margin-left: 130px;
+    margin-left: 110px;
     margin-top: 14px;
     margin-bottom: 20px;
+    
 }
-.content .campus-button, .content .campus-boton {
+.content .campus-boton {
     position: static;
     display: inline-block;
-    width: auto;
+    width: 150px;
     padding: 10px 18px;
+    text-align: center;
     font-size: 0.95rem;
     text-decoration: none;
     background-color: #016099;
     color: #fff;
     border-radius: 6px;
     font-weight: 600;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
 }
+
+.campus-boton:hover{ background-color: #014a78 }
 
 /* Responsive: tablets (<=900px) */
 @media (max-width: 900px) {
@@ -182,7 +174,7 @@ body{
     .container-carreras { margin-left: 10vw; margin-right: 10vw; padding: 18px; }
     .meta-materia { gap: 12px; }
     /* campus button smaller */
-    .campus-button, .campus-boton { left: 16px; bottom: 16px; padding: 8px 18px; }
+    .campus-boton { left: 16px; bottom: 16px; padding: 8px 18px; }
 
     .nombre-usuario {
     font-size: 1.2rem;
@@ -260,7 +252,7 @@ body{
     .content { margin-right: 0; }
     /* Botón: quitar desplazamientos, alinearlo con el inicio del contenido */
     .content .boton-container { margin-left: 0; padding-bottom: 12px; justify-content: center; }
-    .content .campus-button, .content .campus-boton { padding: 10px 18px; }
+    .content .campus-boton { padding: 10px 18px; }
 }
 
     /* Layout principal: contenido + calendario */
@@ -342,6 +334,14 @@ body{
         padding: 10px 16px;
         border-radius: 8px;
         cursor: pointer;
+    }
+
+    .add-activity:hover {
+        background: #014a78;
+    }
+
+    .add-activity{
+        box-shadow: 0 6px 20px rgba(0,0,0,0.06);;
     }
 
 /* Refuerzo para pantallas muy pequeñas: logo arriba, título debajo y centrado */
