@@ -8,12 +8,15 @@
     margin-left: 130px;
     margin-right: 100px;
 }
-html, body {
+
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
+
 /* Header personalizado para Materias en Curso */
 .header-materias {
     width: 100vw;
@@ -23,6 +26,7 @@ html, body {
     padding: 20px 40px 10px 20px;
     box-sizing: border-box;
 }
+
 .header-izq {
     display: flex;
     align-items: center;
@@ -34,16 +38,19 @@ html, body {
     width: auto;
     margin-left: -30px;
 }
+
 .titulo-header {
     margin-top: 30px;
     margin-left: -50px;
     font-size: xx-large;
 }
+
 .header-der {
     display: flex;
     align-items: center;
     gap: 15px;
 }
+
 .icono-usuario {
     width: 50px;
     height: 50px;
@@ -51,86 +58,98 @@ html, body {
     object-fit: cover;
     padding-bottom: 5px;
 }
+
 .usuario-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
+
 .nombre-usuario {
     font-size: 1.1rem;
     font-weight: 600;
     font-style: bold;
 }
+
 .cerrar-sesion {
     font-size: 0.95rem;
     text-decoration: none;
     margin-top: 2px;
+    color: #333333;
 }
+
 .cerrar-sesion:hover {
     text-decoration: underline;
 }
-body{
+
+body {
     background-color: #f1faff;
 }
 
-.filtro{
-        margin-top: -20px;
-        /* Alinear con el inicio del título */
-        margin-left: calc(30px + 70px + 20px);
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 4px;
-        margin-left: 110px;
-        
+.filtro {
+    margin-top: -20px;
+    /* Alinear con el inicio del título */
+    margin-left: calc(30px + 70px + 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    margin-left: 110px;
+
 }
-.filtro select{
-        width: 60%;
-        max-width: 300px;
-        background-color: #9bbdd5;
-        padding: 8px 10px;
-        border: 1px solid rgba(0,0,0,0.08);
-        border-radius: 6px;
-        color: #033b49;
-        box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+
+.filtro select {
+    width: 60%;
+    max-width: 300px;
+    background-color: #9bbdd5;
+    padding: 8px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    color: #033b49;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
 }
 
 /* Estilos para las tarjetas de materias */
 .container-carreras {
-        background: #dcebf4;
-        padding: 25px 20px;
-        border-radius: 6px;
-        margin: 18px 20px;
-        margin-left: 110px;
-        margin-right: 100px;
-        box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-        
+    background: #dcebf4;
+    padding: 25px 20px;
+    border-radius: 6px;
+    margin: 18px 20px;
+    margin-left: 110px;
+    margin-right: 100px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+
 }
+
 .parte-de-arriba-carreras {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
 }
+
 .titulo-materia h3 {
-        margin: 0;
-        font-size: 1.4rem;
-        color: #0b3b4b;
+    margin: 0;
+    font-size: 1.4rem;
+    color: #0b3b4b;
 }
+
 .meta-materia {
-        display: flex;
-        align-items: center;
-        gap: 50px;
-        font-size: 0.95rem;
-        
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-size: 0.95rem;
+
 }
+
 .meta-materia .calendario {
-        color: #016099;
-        text-decoration: underline;
-        text-size-adjust: initial;
+    color: #016099;
+    text-decoration: underline;
+    text-size-adjust: initial;
 }
+
 .notas-materia {
-        margin-top: 20px;
+    margin-top: 20px;
 }
 
 
@@ -141,8 +160,9 @@ body{
     margin-left: 110px;
     margin-top: 14px;
     margin-bottom: 20px;
-    
+
 }
+
 .content .campus-boton {
     position: static;
     display: inline-block;
@@ -155,42 +175,92 @@ body{
     color: #fff;
     border-radius: 6px;
     font-weight: 600;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
 }
 
-.campus-boton:hover{ background-color: #014a78 }
+.campus-boton:hover {
+    background-color: #014a78
+}
 
 /* Responsive: tablets (<=900px) */
 @media (max-width: 900px) {
     .header-materias {
         padding: 14px 20px;
     }
-    .logo-header { height: 56px; margin-left: 0; }
-    .titulo-header { font-size: 1.6rem; margin-top: 6px; margin-left: 8px; }
-    .header-der { gap: 10px; }
-    .icono-usuario { width: 42px; height: 42px; }
-    .linea-fina { margin-left: 20px; margin-right: 20px; margin-bottom: 30px; }
-    .filtro { margin-left: 10vw; }
-    .container-carreras { margin-left: 10vw; margin-right: 10vw; padding: 18px; }
-    .meta-materia { gap: 12px; }
+
+    .logo-header {
+        height: 56px;
+        margin-left: 0;
+    }
+
+    .titulo-header {
+        font-size: 1.6rem;
+        margin-top: 6px;
+        margin-left: 8px;
+    }
+
+    .header-der {
+        gap: 10px;
+    }
+
+    .icono-usuario {
+        width: 42px;
+        height: 42px;
+    }
+
+    .linea-fina {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+    }
+
+    .filtro {
+        margin-left: 10vw;
+    }
+
+    .container-carreras {
+        margin-left: 10vw;
+        margin-right: 10vw;
+        padding: 18px;
+    }
+
+    .meta-materia {
+        gap: 12px;
+    }
+
     /* campus button smaller */
-    .campus-boton { left: 16px; bottom: 16px; padding: 8px 18px; }
+    .campus-boton {
+        left: 16px;
+        bottom: 16px;
+        padding: 8px 18px;
+    }
 
     .nombre-usuario {
-    font-size: 1.2rem;
-    font-weight: 600;
-    font-style: bold;
-}
+        font-size: 1.2rem;
+        font-weight: 600;
+        font-style: bold;
+    }
+
     .cerrar-sesion {
-    font-size: 0.90rem;
-    text-decoration: none;
-    margin-top: 2px;
-}
+        font-size: 0.90rem;
+        text-decoration: none;
+        margin-top: 2px;
+    }
+
     /* Ocultar calendario en tablets y móviles: no debe existir en esos tamaños */
-    .calendar-panel { display: none; }
+    .calendar-panel {
+        display: none;
+    }
+
     /* Ajustar layout cuando el calendario está oculto */
-    .main-layout { gap: 12px; padding-right: 20px; }
-    .content { margin-right: 0; }
+    .main-layout {
+        gap: 12px;
+        padding-right: 20px;
+    }
+
+    .content {
+        margin-right: 0;
+    }
 }
 
 /* Responsive: móviles (<=600px) hay que arreglar el padding y el header, problema para sofi del mañana*/
@@ -201,168 +271,253 @@ body{
         margin-bottom: 5px;
         padding-bottom: 35px;
     }
-    .header-izq { gap: 12px;
+
+    .header-izq {
+        gap: 12px;
     }
-    .logo-header { 
-    height: 30px;
-    margin-bottom: 20px;
-    margin-left: -20px;
+
+    .logo-header {
+        height: 30px;
+        margin-bottom: 20px;
+        margin-left: -20px;
     }
-    .titulo-header { 
-    font-size:1.25rem;
-    margin-left:0; 
-    
-}
-    .header-der { 
-    align-self: flex-end;
-    gap: 8px;
- }
+
+    .titulo-header {
+        font-size: 1.25rem;
+        margin-left: 0;
+
+    }
+
+    .header-der {
+        align-self: flex-end;
+        gap: 8px;
+    }
+
     .icono-usuario {
-    width: 34px;
-    height: 34px;
-}
+        width: 34px;
+        height: 34px;
+    }
+
     .linea-fina {
-    margin-left: 12px;
-    margin-right: 12px;
-    margin-bottom: 36px;
-}
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-bottom: 36px;
+    }
+
     .nombre-usuario {
-    font-size: 0.95rem;
-    font-weight: 600;
-    font-style: bold;
-}
+        font-size: 0.95rem;
+        font-weight: 600;
+        font-style: bold;
+    }
+
     .cerrar-sesion {
-    font-size: 0.90rem;
-    text-decoration: none;
-    margin-top: 2px;
-}
+        font-size: 0.90rem;
+        text-decoration: none;
+        margin-top: 2px;
+    }
 
     /* Ajustes para móvil: márgenes pequeños y select responsivo */
-    .filtro { margin-left: -5px; margin-right: -30px; }
-    .filtro select { width: 100%; max-width: none; box-sizing: border-box; }
-    .container-carreras { margin-left: -5px; margin-right: -30px;; padding: 0x; }
-    .parte-de-arriba-carreras { flex-direction: column; align-items: flex-start; }
-    .meta-materia { gap: 8px; font-size: 0.88rem; }
-    .campus-boton { position: static; padding: 8px 14px; font-size: 0.9rem; }
-
-    /* Ocultar calendario en móviles */
-    .calendar-panel { display: none; }
-    /* Ajustar layout cuando el calendario está oculto */
-    .main-layout { gap: 12px; padding-right: 20px; }
-    .content { margin-right: 0; }
-    /* Botón: quitar desplazamientos, alinearlo con el inicio del contenido */
-    .content .boton-container { margin-left: 0; padding-bottom: 12px; justify-content: center; }
-    .content .campus-boton { padding: 10px 18px; }
-}
-
-    /* Layout principal: contenido + calendario */
-    .main-layout {
-        display: flex;
-        gap: 24px;
-        align-items: stretch; /* estira children para igualar alturas */
-        padding: 0 40px 40px 20px; /* más espacio a la derecha */
+    .filtro {
+        margin-left: -5px;
+        margin-right: -30px;
     }
-    .content {
-        flex: 1 1 auto;
-    }
-    .calendar-panel {
-        width: 480px; /* ancho mayor */
-        max-width: 40vw;
-        align-self: stretch; /* asegurar que se estire a la altura del content */
+
+    .filtro select {
+        width: 100%;
+        max-width: none;
         box-sizing: border-box;
-        margin-right: 40px; /* separar del borde derecho de la ventana */
     }
-    .calendar-card {
-        background: #ffffff;
-        border-radius: 10px;
-        padding: 18px;
-        box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-        height: 100%;
-        display: flex;
+
+    .container-carreras {
+        margin-left: -5px;
+        margin-right: -30px;
+        ;
+        padding: 0x;
+    }
+
+    .parte-de-arriba-carreras {
         flex-direction: column;
+        align-items: flex-start;
     }
-    .calendar-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 10px;
+
+    .meta-materia {
+        gap: 8px;
+        font-size: 0.88rem;
     }
-    .cal-title {
-        font-weight: 700;
-        color: #013a53;
-    }
-    .cal-nav {
-        background: transparent;
-        border: none;
-        font-size: 1.05rem;
-        cursor: pointer;
-    }
-    .calendar-weekdays {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        font-size: 0.85rem;
-        color: #507b88;
-        margin-bottom: 6px;
-    }
-    .calendar-grid {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        gap: 6px;
-        /* permitir que la cuadrícula crezca y rote el scroll si es necesario */
-        flex: 1 1 auto;
-        overflow: auto;
-    }
-    .calendar-grid .day {
-        min-height: 44px;
-        padding: 6px;
-        background: #f6fbfe;
-        border-radius: 6px;
-        text-align: left;
-        color: #033b49;
+
+    .campus-boton {
+        position: static;
+        padding: 8px 14px;
         font-size: 0.9rem;
     }
-    .calendar-grid .day.empty { background: transparent; }
-    .calendar-grid .day.today {
-        background: #d6eef9;
-        border: 1px solid #9fd7f0;
-    }
-    .calendar-actions { margin-top: 12px; text-align: center; }
-    .add-activity {
-        background: #016099;
-        color: #fff;
-        border: none;
-        padding: 10px 16px;
-        border-radius: 8px;
-        cursor: pointer;
+
+    /* Ocultar calendario en móviles */
+    .calendar-panel {
+        display: none;
     }
 
-    .add-activity:hover {
-        background: #014a78;
+    /* Ajustar layout cuando el calendario está oculto */
+    .main-layout {
+        gap: 12px;
+        padding-right: 20px;
     }
 
-    .add-activity{
-        box-shadow: 0 6px 20px rgba(0,0,0,0.06);;
+    .content {
+        margin-right: 0;
     }
+
+    /* Botón: quitar desplazamientos, alinearlo con el inicio del contenido */
+    .content .boton-container {
+        margin-left: 0;
+        padding-bottom: 12px;
+        justify-content: center;
+    }
+
+    .content .campus-boton {
+        padding: 10px 18px;
+    }
+}
+
+/* Layout principal: contenido + calendario */
+.main-layout {
+    display: flex;
+    gap: 24px;
+    align-items: stretch;
+    /* estira children para igualar alturas */
+    padding: 0 40px 40px 20px;
+    /* más espacio a la derecha */
+}
+
+.content {
+    flex: 1 1 auto;
+}
+
+.calendar-panel {
+    width: 480px;
+    /* ancho mayor */
+    max-width: 40vw;
+    align-self: stretch;
+    /* asegurar que se estire a la altura del content */
+    box-sizing: border-box;
+    margin-right: 40px;
+    /* separar del borde derecho de la ventana */
+}
+
+.calendar-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 18px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cal-title {
+    font-weight: 700;
+    color: #013a53;
+}
+
+.cal-nav {
+    background: transparent;
+    border: none;
+    font-size: 1.05rem;
+    cursor: pointer;
+}
+
+.calendar-weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-size: 0.85rem;
+    color: #507b88;
+    margin-bottom: 6px;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 6px;
+    /* permitir que la cuadrícula crezca y rote el scroll si es necesario */
+    flex: 1 1 auto;
+    overflow: auto;
+}
+
+.calendar-grid .day {
+    min-height: 44px;
+    padding: 6px;
+    background: #f6fbfe;
+    border-radius: 6px;
+    text-align: left;
+    color: #033b49;
+    font-size: 0.9rem;
+}
+
+.calendar-grid .day.empty {
+    background: transparent;
+}
+
+.calendar-grid .day.today {
+    background: #d6eef9;
+    border: 1px solid #9fd7f0;
+}
+
+.calendar-actions {
+    margin-top: 12px;
+    text-align: center;
+}
+
+.add-activity {
+    background: #016099;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.add-activity:hover {
+    background: #014a78;
+}
+
+.add-activity {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    ;
+}
 
 /* Refuerzo para pantallas muy pequeñas: logo arriba, título debajo y centrado */
 @media (max-width: 480px) {
-    .header-materias { padding: 10px 12px; }
+    .header-materias {
+        padding: 10px 12px;
+    }
+
     .header-izq {
         flex-direction: column !important;
         align-items: center !important;
         gap: 6px !important;
     }
+
     .logo-header {
         height: 45px !important;
         margin-left: -100px !important;
         display: block;
     }
+
     .titulo-header {
         font-size: 1.50rem !important;
         margin: 0 !important;
         text-align: center !important;
         width: 100%;
     }
+
     /* asegurar que el header-der no desplace al header-izq */
-    .header-der { align-self: center !important; }
+    .header-der {
+        align-self: center !important;
+    }
 }
