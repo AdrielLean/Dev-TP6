@@ -4,24 +4,27 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Inicio</title>
+    <title>Materias En Curso</title>
     <!-- Enlaza tu CSS si corresponde -->
     <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
-    <header>
-        <a href="../Inicio.html"><img src="../../sources/logo.png"></a>
-
-        <span>Materias en curso</span>
-
-        <nav>
-            <span>ROMERO, YESICA ROMINA</span>
-            <a>Cerrar sesion</a>
-            <img src="../sources/fotologin">
-        </nav>
+    <header class="header-materias">
+        <div class="header-izq">
+            <a href="../Inicio.html"><img src="../../sources/logo.png" alt="Logo UTN" class="logo-header"></a>
+            <span class="titulo-header">Materias en Curso</span>
+        </div>
+        <div class="header-der">
+            <div class="usuario-info">
+                <span class="nombre-usuario">Yesica Romina</span>
+                <a href="#" class="cerrar-sesion">Cerrar sesión</a>
+            </div>
+            <img src="../src/usuario.png" alt="Usuario" class="icono-usuario">
+        </div>
     </header>
+   <hr class="linea-fina">
 
     <span>Seleccione la carrera: </span>
     <select name="carrera">
@@ -31,6 +34,7 @@
     </select>
 
     <article>
+        <div class="container">
         <h3>BASES DE DATOS I</h3>
         <span>Profesor: Juan Maria Gomez</span>
         <span>Comision: 009-44</span>
@@ -64,6 +68,7 @@
         <span>Nota parcial 2: -</span>
 
         <a href="#">Calendario de actividades</a>
+        </div>
     </article>
 
     <a href="#">CAMPUS</a>
