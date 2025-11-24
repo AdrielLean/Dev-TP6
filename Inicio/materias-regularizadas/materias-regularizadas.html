@@ -10,21 +10,24 @@
 
 <body>
 
-    <header>
-        <a href="../Inicio.html"><img src="../../sources/logo.png" class="logo"></a>
-
-        <h1>Materias regularizadas</h1>
-
-        <nav class="user">
-            <span>ROMERO, YESICA ROMINA</span>
-            <a href="#">Cerrar sesión</a>
-            <img src="../sources/fotologin" alt="usuario">
-        </nav>
+    <header class="header-materias">
+        <div class="header-izq">
+            <a href="../Inicio.html"><img src="../../sources/logo.png" alt="Logo UTN" class="logo-header"></a>
+            <span class="titulo-header">Materias Regularizadas</span>
+        </div>
+        <div class="header-der">
+            <div class="usuario-info">
+                <span class="nombre-usuario">Yesica Romina</span>
+                <a href="#" class="cerrar-sesion">Cerrar sesión</a>
+            </div>
+            <img src="../src/usuario.png" alt="Usuario" class="icono-usuario">
+        </div>
     </header>
+    <hr class="linea-fina">
 
-    <div class="selector">
-        <label>Seleccione la carrera:</label><br>
-        <select name="carrera">
+    <div class="filtro">
+        <label for="carrera">Seleccione la carrera:</label>
+        <select name="carrera" id="carrera">
             <option>Tecnicatura en Desarrollo Web</option>
             <option>Arquitectura</option>
             <option>Medicina</option>
