@@ -263,7 +263,7 @@ body {
     }
 }
 
-/* Responsive: móviles (<=600px) hay que arreglar el padding y el header, problema para sofi del mañana*/
+/* Responsive: móviles (<=600px) */
 @media (max-width: 600px) {
     .header-materias {
         align-items: flex-start;
