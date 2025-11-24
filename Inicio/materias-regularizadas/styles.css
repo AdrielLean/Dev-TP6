@@ -172,7 +172,7 @@ body {
 }
 
 body {
-    background-color: #f1faff;
+  background-color: #f1faff;
 }
 
 
@@ -203,35 +203,46 @@ body {
 /* CARDS */
 .cards {
   display: flex;
-  justify-content: space-between;
-  gap: 30px;
-  margin-top: 20px;
+  justify-content: center;
+  /* centra las cards */
+  align-items: flex-start;
+  gap: 2rem;
+  /* separacion razonable */
+  flex-wrap: wrap;
+  max-width: 1300px;
+  /* evita que se separen demasiado */
+  margin: 0 auto;
+  /* centra el contenedor */
+  padding: 2rem 1rem;
+  margin-left: 60px;
 }
 
 .card {
   background: #dcebf4;
-  padding: 25px;
-  border-radius: 10px;
-  width: 350px;
+  padding: 1.5rem;
+  border-radius: 6px;
+  width: 330px;
+  /* tamaño consistente */
   position: relative;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
 }
 
 .titulo {
-  font-size: 22px;
+  font-size: 1.4rem;
   margin-bottom: 8px;
   font-weight: 600;
+  color: #0b3b4b;
 }
 
 .card p {
-  font-size: 15px;
+  font-size: 0.95rem;
   line-height: 22px;
   margin-bottom: 15px;
 }
 
 .estado {
   font-weight: 600;
-  font-size: 15px;
+  font-size: 0.95rem;
 }
 
 /* Colores de barra */
@@ -257,27 +268,56 @@ body {
   background: #ce5a4a;
 }
 
-.cards {
-  display: flex;
-  justify-content: center;
-  /* centra las cards */
-  align-items: flex-start;
-  gap: 2rem;
-  /* separacion razonable */
-  flex-wrap: wrap;
-  max-width: 1300px;
-  /* evita que se separen demasiado */
-  margin: 0 auto;
-  /* centra el contenedor */
-  padding: 2rem 1rem;
-}
+@media (max-width: 900px) {
+  .header-materias {
+    padding: 14px 20px;
+  }
 
-.card {
-  background: var(--light-color-bgcard, #e8f1f9);
-  padding: 1.5rem;
-  border-radius: 12px;
-  width: 330px;
-  /* tamaño consistente */
-  position: relative;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  .logo-header {
+    height: 56px;
+    margin-left: 0;
+  }
+
+  .titulo-header {
+    font-size: 1.6rem;
+    margin-top: 6px;
+    margin-left: 8px;
+  }
+
+  .header-der {
+    gap: 10px;
+  }
+
+  .icono-usuario {
+    width: 42px;
+    height: 42px;
+  }
+
+  .linea-fina {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+  }
+
+  .filtro {
+    margin-left: 10vw;
+  }
+
+  .container-carreras {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding: 18px;
+  }
+
+  .nombre-usuario {
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-style: bold;
+  }
+
+  .cerrar-sesion {
+    font-size: 0.90rem;
+    text-decoration: none;
+    margin-top: 2px;
+  }
 }
