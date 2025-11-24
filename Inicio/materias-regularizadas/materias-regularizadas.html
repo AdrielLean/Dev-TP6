@@ -4,76 +4,89 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Inicio</title>
-    <!-- Enlaza tu CSS si corresponde -->
+    <title>Materias regularizadas</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
     <header>
-        <a href="../Inicio.html"><img src="../../sources/logo.png"></a>
+        <a href="../Inicio.html"><img src="../../sources/logo.png" class="logo"></a>
 
-        <span>Materias regularizadas</span>
+        <h1>Materias regularizadas</h1>
 
-        <nav>
+        <nav class="user">
             <span>ROMERO, YESICA ROMINA</span>
-            <a>Cerrar sesion</a>
-            <img src="../sources/fotologin">
+            <a href="#">Cerrar sesión</a>
+            <img src="../sources/fotologin" alt="usuario">
         </nav>
     </header>
 
-    <span>Seleccione la carrera: </span>
-    <select name="carrera">
-        <option>Tec. web</option>
-        <option>Arquitectura</option>
-        <option>Medicina</option>
-    </select>
+    <div class="selector">
+        <label>Seleccione la carrera:</label><br>
+        <select name="carrera">
+            <option>Tecnicatura en Desarrollo Web</option>
+            <option>Arquitectura</option>
+            <option>Medicina</option>
+        </select>
+    </div>
 
-    <article>
-        <h3>BASES DE DATOS I</h3>
-        <span>Profesor: Juan Maria Gomez</span>
-        <span>Comision: 834-309</span>
-        <span>Nota: 5</span>
-        <span>Fecha proxima instancia: 09/04/2026</span>
-        <span>Fecha vigencia: 09/07/2026</span>
+    <section class="cards">
 
-        <span>Estado: Vigente</span>
+        <!-- CARD 1 -->
+        <article class="card">
+            <div class="barra verde"></div>
 
-        <div></div>
-    </article>
+            <div class="titulo">Bases de Datos I</div>
 
-    <article>
-        <h3>Diseño grafico</h3>
-        <span>Profesor: Juan Maria Gomez</span>
-        <span>Comision: 834-309</span>
-        <span>Nota: 5</span>
-        <span>Fecha proxima instancia: 09/04/2026</span>
-        <span>Fecha vigencia: 09/07/2026</span>
+            <p>
+                Profesor: Juan Maria Gomez<br>
+                Comisión: 834-309<br>
+                Nota: 5<br>
+                Fecha próxima instancia: 09/04/2026<br>
+                Fecha vigencia: 09/07/2026
+            </p>
 
-        <span>Estado: Proximo a vencer</span>
+            <div class="estado">Estado: Vigente</div>
+        </article>
 
-        <div></div>
-    </article>
+        <!-- CARD 2 -->
+        <article class="card">
+            <div class="barra amarillo"></div>
 
-    <article>
-        <h3>Ingles tecnico I</h3>
-        <span>Profesor: Juan Maria Gomez</span>
-        <span>Comision: 834-309</span>
-        <span>Nota: 5</span>
-        <span>Fecha proxima instancia: 09/04/2026</span>
-        <span>Fecha vigencia: 09/07/2026</span>
+            <div class="titulo">Diseño gráfico</div>
 
-        <span>Estado: Vencido</span>
+            <p>
+                Profesor: Juan Maria Gomez<br>
+                Comisión: 834-309<br>
+                Nota: 5<br>
+                Fecha próxima instancia: 09/04/2026<br>
+                Fecha vigencia: 09/07/2026
+            </p>
 
-        <div></div>
-    </article>
+            <div class="estado">Estado: Próximo a vencer</div>
+        </article>
 
+        <!-- CARD 3 -->
+        <article class="card">
+            <div class="barra rojo"></div>
 
-    <!-- Enlaza tu JS si corresponde -->
+            <div class="titulo">Inglés Técnico I</div>
+
+            <p>
+                Profesor: Juan Maria Gomez<br>
+                Comisión: 834-309<br>
+                Nota: 5<br>
+                Fecha próxima instancia: 09/04/2026<br>
+                Fecha vigencia: 09/07/2026
+            </p>
+
+            <div class="estado">Estado: Vencido</div>
+        </article>
+
+    </section>
+
     <script src="script.js" defer></script>
-    <!--METER POPAPS POR INCRUSTACION DE JS-->
-
 </body>
 
 </html>
