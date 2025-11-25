@@ -4,95 +4,210 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Materias Aprobadas</title>
+    <title>Historial academico</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kedebideri:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-<header class="header">
-    <a href="../Inicio.html"><img src="../../sources/logo.png" alt="Logo institucional"></a>
+    <header class="header-materias">
 
-    <div class="contenedor">
-        <div class="infoUsuario">
-            <span class="nombre">ROMERO, Yesica Romina</span>
-            <a href="#" class="cierreDeSesion">Cerrar Sesión</a>
-        </div>
-        <img src="/Inicio/src/usuario.png" alt="Foto de usuario" class="iconoDeUsuario">
-    </div>
-</header>
+        <div class="header-izq">
 
-<main class="contenido">
+            <a href="../Inicio.html"><img src="../../sources/logo.png" alt="Logo UTN" class="logo-header"></a>
+            <span class="titulo-header">Historial academico</span>
 
-  
-    <div class="filtrosTabla">
-
-    
-        <div class="desplegables">
-            <button class="desplegables-boton">
-                Seleccionar Carrera <span class="caret">▼</span>
-            </button>
-            <ul class="desplegables-opciones">
-                <li><a href="#">Tecnicatura en Desarrollo Web</a></li>
-                <li><a href="#">Tecnicatura en Diseño Gráfico</a></li>
-                <li><a href="#">Licenciatura en Sistemas</a></li>
-            </ul>
         </div>
 
-       
-        <div class="desplegables">
-            <button class="desplegables-boton">
-                Orden alfabético <span class="caret">▼</span>
-            </button>
-            <ul class="desplegables-opciones">
-                <li><a href="#">A → Z</a></li>
-                <li><a href="#">Z → A</a></li>
-            </ul>
+        <div class="header-der">
+
+            <div class="usuario-info">
+
+                <span class="nombre-usuario">Yesica Romina</span>
+                <a href="../../login/login.html" id="cerrar-sesion">Cerrar sesión</a>
+
+            </div>
+            <img src="../src/usuario.png" alt="Usuario" class="icono-usuario">
+
         </div>
 
-    
-        <div class="desplegables">
-            <button class="desplegables-boton">
-                Orden por fecha <span class="caret">▼</span>
-            </button>
-            <ul class="desplegables-opciones">
-                <li><a href="#">Más reciente</a></li>
-                <li><a href="#">Más antigua</a></li>
-            </ul>
+    </header>
+    <hr class="linea-fina">
+
+    <main class="contenido">
+
+
+        <div class="filtrosTabla">
+
+            <div class="filtro">
+                <select id="carrera" name="carrera">
+                    <option disabled selected>Seleccione la carrera</option>
+                    <option>Tecnicatura en Desarrollo Web</option>
+                    <option>Arquitectura</option>
+                    <option>Medicina</option>
+                </select>
+            </div>
+
+
+
         </div>
 
-    </div>
 
-   
-    
-    <div class="contenedorTabla">
-        <h2>Materias Aprobadas</h2>
-        <div class="scrollTabla">
-            <table class="tabla">
-                <thead>
-                    <tr>
-                        <th>Código</th>
-                        <th>Materia</th>
-                        <th>Fecha</th>
-                        <th>Nota</th>
-                        <th>Acta</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>7442</td><td>Diseño Gráfico</td><td>12/12/25</td><td>8</td><td>24</td></tr>
-                    <tr><td></td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td></td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td></td><td></td><td></td><td></td><td></td></tr>
-                    <tr><td></td><td></td><td></td><td></td><td></td></tr>
-                </tbody>
-            </table>
+
+        <div class="contenedorTabla">
+            <h2>Materias Aprobadas</h2>
+            <div class="scrollTabla">
+                <table class="tabla">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Materia</th>
+                            <th>Fecha</th>
+                            <th>Nota</th>
+                            <th>Acta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>7442</td>
+                            <td>Programación Web</td>
+                            <td>15/08/24</td>
+                            <td>9</td>
+                            <td>28</td>
+                        </tr>
+                        <tr>
+                            <td>7443</td>
+                            <td>Base de Datos</td>
+                            <td>22/09/24</td>
+                            <td>8</td>
+                            <td>29</td>
+                        </tr>
+                        <tr>
+                            <td>7444</td>
+                            <td>Análisis Matemático</td>
+                            <td>10/07/24</td>
+                            <td>7</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td>7445</td>
+                            <td>Inglés Técnico</td>
+                            <td>18/10/24</td>
+                            <td>8</td>
+                            <td>31</td>
+                        </tr>
+                        <tr>
+                            <td>7442</td>
+                            <td>Diseño Gráfico</td>
+                            <td>12/12/25</td>
+                            <td>8</td>
+                            <td>24</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <button class="boton">Certificado de aprobadas</button>
+            
         </div>
-        <button class="boton">Certificado de aprobadas</button>
-    </div>
-    
-    
 
-</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="contenedorTabla" id="grafic">
+            <h2>Resumen de materias</h2>
+            
+            <div style="margin-bottom: 1.5rem;">
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1rem; font-size: 0.9rem;">
+                <div><div id="apro"></div>Aprobadas: <strong id="numAprobadas">5</strong></div>
+                <div><div id="final"></div>Finales: <strong id="numFinales">3</strong></div>
+                <div><div id="nocur"></div>No cursadas: <strong id="numNoCursadas">42</strong></div>
+            </div>
+            
+            <div style="display: flex; height: 20px; border-radius: 4px; overflow: hidden; gap: 2px;">
+                <div id="barAprobadas" style="background-color: #4CAF50;"></div>
+                <div id="barFinales" style="background-color: #FFC107;"></div>
+                <div id="barNoCursadas" style="background-color: #E0E0E0;"></div>
+            </div>
+            </div>
+        </div>
+
+        <script>
+        const TOTAL = 50;
+        const spanAprobadas = document.getElementById('numAprobadas');
+        const spanFinales = document.getElementById('numFinales');
+        const spanNoCursadas = document.getElementById('numNoCursadas');
+        const barAprobadas = document.getElementById('barAprobadas');
+        const barFinales = document.getElementById('barFinales');
+        const barNoCursadas = document.getElementById('barNoCursadas');
+
+        function contarAprobadas() {
+            const filas = document.querySelectorAll('.tabla tbody tr');
+            return filas.length;
+        }
+
+        function actualizar() {
+            const aprobadas = contarAprobadas();
+            const finales = 3;
+            const noCursadas = TOTAL - aprobadas - finales;
+            
+            const pAprobadas = (aprobadas / TOTAL) * 100;
+            const pFinales = (finales / TOTAL) * 100;
+            const pNoCursadas = (noCursadas / TOTAL) * 100;
+            
+            spanAprobadas.textContent = aprobadas;
+            spanFinales.textContent = finales;
+            spanNoCursadas.textContent = Math.max(0, noCursadas);
+            
+            barAprobadas.style.width = pAprobadas + '%';
+            barFinales.style.width = pFinales + '%';
+            barNoCursadas.style.width = pNoCursadas + '%';
+        }
+
+        actualizar();
+        </script>
+
+
+
+
+
+
+
+
+
+    </main>
+
+
 
 </body>
+
 </html>

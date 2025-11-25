@@ -1,27 +1,113 @@
-
 * {
-    box-sizing: border-box; 
+    font-family: "Kedebideri", sans-serif;
 }
 
+.linea-fina {
+    border: none;
+    border-top: 2px solid #b0bfc7;
+    height: 0;
+    flex: 1;
+    margin-top: -10px;
+    margin-bottom: 50px;
+    margin-left: 130px;
+    margin-right: 100px;
+}
+
+
+html,
 body {
+    min-height: 100%;
+    height: auto;
     margin: 0;
-    font-family: "Segoe UI", sans-serif;
-    background: #e8f3fa;
-    overflow-x: hidden; 
+    padding: 0;
+    background-color: #f1faff;
 }
 
-.header {
+/* Header personalizado para Materias en Curso */
+/* HEADER */
+.header-materias {
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 30px;
-    border-bottom: 1px solid #9993;
+    padding: 20px 40px 10px 20px;
+    box-sizing: border-box;
 }
 
-.header a img {
-    height: 60px;
-    width: auto;
+.header-izq {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
+
+.logo-header {
+    height: 70px;
+    width: auto;
+    margin-left: -30px;
+}
+
+.titulo-header {
+    margin-top: 30px;
+    margin-left: -50px;
+    font-size: xx-large;
+    font-family: "Kedebideri", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.header-der {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icono-usuario {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding-bottom: 5px;
+}
+
+.usuario-info {
+    display: flex;
+    flex-flow: column nowrap;
+    /* align-items: flex-start; */
+    font-family: "Kedebideri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nombre-usuario {
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-style: normal;
+    font-family: "Kedebideri", sans-serif;
+}
+
+#cerrar-sesion {
+    font-size: 0.95rem;
+    text-decoration: none;
+    margin-top: 2px;
+    color: #333333;
+    text-align: right;
+}
+
+#cerrar-sesion:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .contenedor {
@@ -110,7 +196,7 @@ body {
 .desplegables-boton:focus {
     background: #0f93b0;
     color: white;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
 }
 
 .caret {
@@ -124,10 +210,10 @@ body {
     position: absolute;
     top: calc(100% + 0px);
     left: 0;
-    width: 100%;       
+    width: 100%;
     background: #fff;
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(14,40,55,0.12);
+    box-shadow: 0 10px 30px rgba(14, 40, 55, 0.12);
     padding: 6px 0;
     z-index: 9999;
 }
@@ -168,7 +254,7 @@ body {
     border-radius: 12px;
     margin-top: 5px;
     margin-bottom: 5px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 .contenedorTabla h2 {
@@ -215,7 +301,7 @@ body {
 
 .boton:hover {
     background: #077896;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -315,4 +401,140 @@ body {
     .boton {
         width: 100%;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#apro {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background-color: rgb(76, 175, 80);
+    margin-right: 5px;
+}
+
+#final {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background-color: rgb(255, 193, 7);
+    margin-right: 5px;
+}
+
+#nocur {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background-color: rgb(224, 224, 224);
+    margin-right: 5px;
+}
+
+#grafic {
+    margin-top: 65px;
+}
+
+
+
+
+.filtro {
+    margin-top: -20px;
+    /* Alinear con el inicio del título */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    font-family: "Kedebideri", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.filtro select {
+    width: 100%;
+    max-width: 300px;
+    background-color: #9bbdd5;
+    padding: 8px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    color: #000000;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    font-family: "Kedebideri", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+}
+
+/* Estilos para las tarjetas de materias */
+.container-carreras {
+    background: #dcebf4;
+    padding: 25px 20px;
+    border-radius: 6px;
+    margin: 18px 20px;
+    margin-left: 110px;
+    margin-right: 100px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    font-family: "Kedebideri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.parte-de-arriba-carreras {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    font-weight: 600;
+}
+
+
+
+
+.boton {
+    margin: 20px auto 10px auto;
+    margin-right: 0px;
+
+
+    background: #016099;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "Kedebideri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.boton:hover {
+    background: #014a78;
+}
+
+.boton {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    ;
 }

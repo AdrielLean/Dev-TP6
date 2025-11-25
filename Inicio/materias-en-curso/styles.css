@@ -1,3 +1,7 @@
+* {
+    font-family: "Kedebideri", sans-serif;
+}
+
 .linea-fina {
     border: none;
     border-top: 2px solid #b0bfc7;
@@ -9,39 +13,17 @@
     margin-right: 100px;
 }
 
+
 html,
 body {
-    height: 100%;
+    min-height: 100%;
+    height: auto;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-}
-
-.kedebideri-regular {
-    font-family: "Kedebideri", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.kedebideri-medium {
-    font-family: "Kedebideri", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.kedebideri-semibold {
-    font-family: "Kedebideri", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-}
-
-.kedebideri-bold {
-    font-family: "Kedebideri", sans-serif;
-    font-weight: 700;
-    font-style: normal;
 }
 
 /* Header personalizado para Materias en Curso */
+/* HEADER */
 .header-materias {
     width: 100vw;
     display: flex;
@@ -88,8 +70,8 @@ body {
 
 .usuario-info {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-flow: column nowrap;
+    /* align-items: flex-start; */
     font-family: "Kedebideri", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -102,16 +84,20 @@ body {
     font-family: "Kedebideri", sans-serif;
 }
 
-.cerrar-sesion {
+#cerrar-sesion {
     font-size: 0.95rem;
     text-decoration: none;
     margin-top: 2px;
     color: #333333;
+    text-align: right;
 }
 
-.cerrar-sesion:hover {
+#cerrar-sesion:hover {
     text-decoration: underline;
 }
+
+
+
 
 body {
     background-color: #f1faff;
@@ -521,7 +507,7 @@ body {
     text-align: center;
 }
 
-span {
+.pancito {
     padding: 3px;
 }
 

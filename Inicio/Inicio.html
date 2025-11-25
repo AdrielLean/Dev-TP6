@@ -13,15 +13,21 @@
 <body>
 
   <header class="cabecera">
+
     <div class="headerIzq">
+
       <a class="logo-link" href="./Inicio.html">
         <img src="./src/logo.png" alt="UTN Avellaneda logo" class="logo-img">
       </a>
+
       <button class="botonDeInicio" aria-label="Inicio">
         <img src="./src/casita.png" alt="Inicio">
       </button>
+
       <nav class="inicio">
+
         <ul class="desplegables">
+
           <li class="opciones desplegar">
             <button class="seccion">Estado académico <span class="caret">▾</span></button>
             <ul class="menu">
@@ -30,6 +36,7 @@
               <li><a href="historial-academico/historial-academico.html">Historial académico</a></li>
             </ul>
           </li>
+
           <li class="opciones desplegar">
             <button class="seccion">Inscripciones <span class="caret">▾</span></button>
             <ul class="menu">
@@ -37,143 +44,145 @@
               <li><a href="#">Inscripción a exámenes</a></li>
             </ul>
           </li>
+
           <li class="opciones desplegar">
+
             <button class="seccion">Trámites <span class="caret">▾</span></button>
+
             <ul class="menu">
               <li><a href="#">Cursado en otra región</a></li>
               <li><a href="#">Pase a otra región</a></li>
               <li><a href="#">Equivalencias</a></li>
               <li><a href="#">Constancia de materias aprobadas</a></li>
             </ul>
+
           </li>
+
         </ul>
+
       </nav>
+
     </div>
+
     <div class="header-der">
+
       <div class="usuario-info">
+
         <span class="nombre-usuario">Yesica Romina</span>
-        <a href="#" class="cerrar-sesion">Cerrar sesión</a>
+        <a href="../../login/login.html" id="cerrar-sesion">Cerrar sesión</a>
+
       </div>
       <img src="./src/usuario.png" alt="Usuario" class="icono-usuario">
+
     </div>
+
   </header>
+
   <hr class="linea-fina">
 
-  <div class="contenedorDeAnuncios">
-    
-
-<aside class="sidebar">
-  <h2>Anuncios</h2>
-  <div class="contenedor-anuncios">
-    <ul class="lista-anuncios">
-      <li>🔔 Inscripción a finales abierta hasta el 30/11</li>
-      <li>🔔 Nuevo curso de programación disponible</li>
-      <li>🔔 Recordatorio: entrega de trabajos prácticos el 15/12</li>
-      <li>🔔 Se habilitó la inscripción a materias para el ciclo 2026</li>
-      <li>🔔 Charla sobre Inteligencia Artificial el 05/12</li>
-      <li>🔔 Última fecha para solicitar equivalencias: 10/12</li>
-      <li>🔔 Taller de Git y GitHub gratuito el 12/12</li>
-      <li>🔔 Receso académico del 20/12 al 15/01</li>
-    </ul>
-  </div>
-</aside>
+  <div id="contenedorDeAnuncios">
 
 
+    <aside class="sidebar">
 
-    <main class="barraDeEstado">
+      <h2>Anuncios</h2>
+
+      <div class="contenedor-anuncios">
+        <div class="lista-anuncios">
+
+          <div>🔔 Inscripción a finales abierta hasta el 30/11</div>
+          <div>🔔 Nuevo curso de programación disponible</div>
+          <div>🔔 Recordatorio: entrega de trabajos prácticos el 15/12</div>
+          <div>🔔 Se habilitó la inscripción a materias para el ciclo 2026</div>
+          <div>🔔 Charla sobre Inteligencia Artificial el 05/12</div>
+          <div>🔔 Última fecha para solicitar equivalencias: 10/12</div>
+          <div>🔔 Taller de Git y GitHub gratuito el 12/12</div>
+          <div>🔔 Receso académico del 20/12 al 15/01</div>
+
+        </div>
+      </div>
+
+    </aside>
+
+
+
+
+    <main id="barraDeEstado">
+
       <section class="contenedorEstado1">
+
         <div class="estado">
           Estado del alumno: <strong class="estadoActivo">ACTIVO</strong>
         </div>
+
       </section>
 
-
       <section class="tarjeta grande">
+
         <div class="materias-lateral">
           <button class="carrera-titulo active" data-carrera="carrera1">Tec. en Desarrollo Web</button>
           <button class="carrera-titulo" data-carrera="carrera2">Tec. en Sistemas</button>
         </div>
 
         <div class="tarjeta largo" id="infoCarrera">
+
           <ul class="carrera1">
             <li><strong>Programación I</strong> - Profesor: Juan Pérez - Horario: Lunes 9-11 - Nota: 8</li>
             <li><strong>Matemática</strong> - Profesor: Ana Gómez - Horario: Martes 10-12 - Nota: 7</li>
+            <li><strong>Diseño grafico</strong> - Profesor: Ana Gómez - Horario: Martes 10-12 - Nota: 7</li>
+            <li><strong>Ingles tecnico I</strong> - Profesor: Ana Gómez - Horario: Martes 10-12 - Nota: 7</li>
+            <li><strong>Taller web I</strong> - Profesor: Ana Gómez - Horario: Martes 10-12 - Nota: 7</li>
           </ul>
+
           <ul class="carrera2" style="display:none;">
             <li><strong>Estructuras de Datos</strong> - Profesor: Carlos López - Horario: Miércoles 14-16 - Nota: 9</li>
             <li><strong>Base de Datos</strong> - Profesor: Laura Sánchez - Horario: Jueves 10-12 - Nota: 8</li>
+            <li><strong>Matemática</strong> - Profesor: Ana Gómez - Horario: Martes 10-12 - Nota: 7</li>
+            <li><strong>Taller web I</strong> - Profesor: Ana Gómez - Horario: Martes 10-12 - Nota: 7</li>
+            <li><strong>Tulepera con la papaya</strong> - Profesor: Ana Gómez - Horario: Martes 10-12 - Nota: 7</li>
           </ul>
+
         </div>
+
       </section>
 
+      <section id="accionesDeAbajo">
 
-      <section class="accionesDeAbajo">
         <article class="tarjetaOpcion">
           <div class="icono"><img src="./src/calendario.png" alt=""></div>
           <div class="nombreDeOpcionl">Calendario académico</div>
         </article>
+
         <article class="tarjetaOpcion">
           <div class="icono"><img src="./src/plan.png" alt=""></div>
           <div class="nombreDeOpcionl">Plan de estudio</div>
         </article>
+
         <article class="tarjetaOpcion">
           <div class="icono"><img src="./src/docs.png" alt=""></div>
           <div class="nombreDeOpcionl">Documentos</div>
         </article>
+
       </section>
+
     </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
   </div>
 
+  <script src="main.js"></script>
 
-  <script>
-
-    document.querySelectorAll('.opciones.desplegar').forEach(drop => {
-      const btn = drop.querySelector('.seccion');
-      const menu = drop.querySelector('.menu');
-
-      let timeout;
-
-
-      drop.addEventListener('mouseenter', () => {
-        clearTimeout(timeout);
-        drop.classList.add('open');
-      });
-
-      drop.addEventListener('mouseleave', () => {
-        timeout = setTimeout(() => drop.classList.remove('open'), 150);
-      });
-
-      btn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        if (drop.classList.contains('open')) {
-          drop.classList.remove('open');
-        } else {
-          drop.classList.add('open');
-        }
-      });
-    });
-
-
-    document.addEventListener('click', (e) => {
-      if (!e.target.closest('.opciones.desplegar')) {
-        document.querySelectorAll('.opciones.desplegar.open').forEach(d => d.classList.remove('open'));
-      }
-    });
-
-
-    const botonesCarrera = document.querySelectorAll('.carrera-titulo');
-    botonesCarrera.forEach(btn => {
-      btn.addEventListener('click', () => {
-        botonesCarrera.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        const carrera = btn.getAttribute('data-carrera');
-        document.querySelectorAll('#infoCarrera ul').forEach(ul => ul.style.display = 'none');
-        document.querySelector('#infoCarrera .' + carrera).style.display = 'block';
-      });
-    });
-  
-
-  </script>
 </body>
 
 </html>

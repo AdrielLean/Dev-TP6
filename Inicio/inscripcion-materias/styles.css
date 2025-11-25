@@ -1,7 +1,7 @@
 * {
     font-family: "Kedebideri", sans-serif;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 .linea-fina {
@@ -15,16 +15,19 @@
     margin-right: 100px;
 }
 
+
 html,
 body {
-    height: 100%;
+    min-height: 100%;
+    height: auto;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
 
 
-/* Header personalizado para Materias en Curso */
+
+/* HEADER */
 .header-materias {
     width: 100vw;
     display: flex;
@@ -50,6 +53,9 @@ body {
     margin-top: 30px;
     margin-left: -50px;
     font-size: xx-large;
+    font-family: "Kedebideri", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .header-der {
@@ -68,25 +74,34 @@ body {
 
 .usuario-info {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-flow: column nowrap;
+    /* align-items: flex-start; */
+    font-family: "Kedebideri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .nombre-usuario {
     font-size: 1.1rem;
-    font-weight: 600;
-    font-style: bold;
+    font-weight: 700;
+    font-style: normal;
+    font-family: "Kedebideri", sans-serif;
 }
 
-.cerrar-sesion {
+#cerrar-sesion {
     font-size: 0.95rem;
     text-decoration: none;
     margin-top: 2px;
     color: #333333;
+    text-align: right;
 }
 
-.cerrar-sesion:hover {
+#cerrar-sesion:hover {
     text-decoration: underline;
+}
+
+body {
+    background-color: #f1faff;
 }
 
 body {
@@ -138,7 +153,6 @@ body {
     padding: 0px 0px 0px 15px;
     line-height: 60px;
     background-color: #9bbdd5
-
 }
 
 .number {
@@ -175,7 +189,7 @@ body {
 #barra-estado div span {
     padding-right: 10px;
     font-size: 13px;
-    color:white;
+    color: white;
     text-shadow: #333333 0px 0px 0.06px;
 }
 
@@ -229,7 +243,8 @@ body {
 .mat label:hover {
     background-color: #9bbdd5;
 }
-#hola{
+
+#hola {
     display: none;
 }
 
@@ -331,12 +346,12 @@ body {
 }
 
 .materia h2 {
-    background-color:#DCEBF4;
+    background-color: #DCEBF4;
     height: 150px;
     width: 25%;
     line-height: 150px;
     border-radius: 6px 0px 0px 6px;
- 
+
 }
 
 .comi {
@@ -347,10 +362,11 @@ body {
     background-color: #e0e0e0;
 }
 
-.comi:first-child{
+.comi:first-child {
     border-radius: 0px 6px 0px 0px;
 }
-.comi:last-child{
+
+.comi:last-child {
     border-radius: 0px 0px 6px 0px;
 }
 
@@ -410,7 +426,7 @@ body {
 
 #atras2 {
     margin: 50px 0px 0px 0px;
-    background-color:#016099;
+    background-color: #016099;
 
     border: 1px solid #014a78;
     border-radius: 6px;
@@ -529,4 +545,35 @@ body {
 
 #tercera-etapa {
     display: none;
+}
+
+
+
+
+
+
+.boton {
+    margin: 20px auto 10px auto;
+    margin-right: 0px;
+
+
+    background: #016099;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "Kedebideri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    height: 50px;
+    width: 250px;
+}
+
+.boton:hover {
+    background: #014a78;
+}
+
+.boton {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    ;
 }

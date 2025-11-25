@@ -15,23 +15,33 @@
 <body>
 
     <header class="header-materias">
+
         <div class="header-izq">
+
             <a href="../Inicio.html"><img src="../../sources/logo.png" alt="Logo UTN" class="logo-header"></a>
             <span class="titulo-header">Materias Regularizadas</span>
+
         </div>
+
         <div class="header-der">
+
             <div class="usuario-info">
+
                 <span class="nombre-usuario">Yesica Romina</span>
-                <a href="#" class="cerrar-sesion">Cerrar sesión</a>
+                <a href="../../login/login.html" id="cerrar-sesion">Cerrar sesión</a>
+
             </div>
             <img src="../src/usuario.png" alt="Usuario" class="icono-usuario">
+
         </div>
+
     </header>
+
     <hr class="linea-fina">
 
     <div class="filtro">
-        <label for="carrera">Seleccione la carrera:</label>
         <select name="carrera" id="carrera">
+            <option disabled selected>Seleccione la carrera</option>
             <option>Tecnicatura en Desarrollo Web</option>
             <option>Arquitectura</option>
             <option>Medicina</option>
@@ -55,6 +65,10 @@
             </p>
 
             <div class="estado">Estado: Vigente</div>
+
+            <div class="boton-final">
+                <button>Inscribirme a final</button>
+            </div>
         </article>
 
         <!-- CARD 2 -->
@@ -72,6 +86,10 @@
             </p>
 
             <div class="estado">Estado: Próximo a vencer</div>
+
+            <div class="boton-final">
+                <button>Inscribirme a final</button>
+            </div>
         </article>
 
         <!-- CARD 3 -->
@@ -89,11 +107,13 @@
             </p>
 
             <div class="estado">Estado: Vencido</div>
+
+            <div class="boton-final" id="lat">
+                <button disabled>Inscribirme a final</button>
+            </div>
         </article>
 
-        <div class="boton-final">
-            <button>Inscribirme a final</button>
-        </div>
+
 
 
     </section>
