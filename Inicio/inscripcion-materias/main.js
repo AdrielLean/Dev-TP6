@@ -23,9 +23,12 @@ document.getElementById("submit1").addEventListener("click", function (e) {
         document.getElementById("segunda-etapa").style.display = "block";
         document.getElementById("tercera-etapa").style.display = "none";
 
-        document.getElementById("barra-estado").style.background = "linear-gradient(to right, aqua 0%, aqua 50%, gray 51%, gray 100%)";
-        document.getElementById("seg").style.backgroundColor = "aqua";
-        document.getElementById("ter").style.backgroundColor = "gray";
+        document.getElementById("barra-estado").style.background = "linear-gradient(to right, #016099 0%, #016099 50%, #9BBDD5 51%, #9BBDD5 100%)";
+        document.getElementById("seg").style.backgroundColor = "#016099";
+        document.getElementById("ter").style.backgroundColor = "#9BBDD5";
+
+        document.getElementById("no-ver").style.display = "none";
+        document.getElementById("hola").style.display = "inline-block";
 
         const elementos = document.querySelectorAll(".errores");
         elementos.forEach((el) => {
@@ -68,9 +71,9 @@ document.getElementById("submit2").addEventListener("click", function (e) {
         document.getElementById("segunda-etapa").style.display = "none";
         document.getElementById("tercera-etapa").style.display = "block";
 
-        document.getElementById("barra-estado").style.background = "linear-gradient(to right, aqua 0%, aqua 50%, aqua 51%, aqua 100%)";
-        document.getElementById("seg").style.backgroundColor = "aqua";
-        document.getElementById("ter").style.backgroundColor = "aqua";
+        document.getElementById("barra-estado").style.background = "linear-gradient(to right, #016099 0%, #016099 50%, #016099 51%, #016099 100%)";
+        document.getElementById("seg").style.backgroundColor = "#016099";
+        document.getElementById("ter").style.backgroundColor = "#016099";
     } else {
         console.log("NO HAY COMISION SELECCIONADA");
 
@@ -90,9 +93,12 @@ document.getElementById("atras2").addEventListener("click", function (e) {
     document.getElementById("segunda-etapa").style.display = "none";
     document.getElementById("tercera-etapa").style.display = "none";
 
-    document.getElementById("barra-estado").style.background = "linear-gradient(to right, gray 0%, gray 50%, gray 51%, gray 100%)";
-    document.getElementById("seg").style.backgroundColor = "gray";
-    document.getElementById("ter").style.backgroundColor = "gray";
+    document.getElementById("barra-estado").style.background = "linear-gradient(to right, #9BBDD5 0%, #9BBDD5 50%, #9BBDD5 51%, #9BBDD5 100%)";
+    document.getElementById("seg").style.backgroundColor = "#9BBDD5";
+    document.getElementById("ter").style.backgroundColor = "#9BBDD5";
+
+    document.getElementById("no-ver").style.display = "inline-block";
+    document.getElementById("hola").style.display = "none";
 });
 
 document.querySelectorAll('input[name="turno"]').forEach((radio) => {
