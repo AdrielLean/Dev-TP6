@@ -4,86 +4,92 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Inicio</title>
-    <!-- Enlaza tu CSS si corresponde -->
+    <title>Materias Aprobadas</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
-    <header>
-        <a href="../Inicio.html"><img src="../../sources/logo.png" alt="Logo institucional"></a>
+<header class="header">
+    <a href="../Inicio.html"><img src="../../sources/logo.png" alt="Logo institucional"></a>
 
-        <span>Historial académico</span>
+    <div class="contenedor">
+        <div class="infoUsuario">
+            <span class="nombre">ROMERO, Yesica Romina</span>
+            <a href="#" class="cierreDeSesion">Cerrar Sesión</a>
+        </div>
+        <img src="/Inicio/src/usuario.png" alt="Foto de usuario" class="iconoDeUsuario">
+    </div>
+</header>
 
-        <nav>
-            <span>ROMERO, YESICA ROMINA</span>
-            <a href="#" role="button">Cerrar sesión</a>
-            <img src="../../sources/logo.png" alt="Foto de usuario (placeholder)">
-        </nav>
-    </header>
+<main class="contenido">
 
-    <label for="carrera">Seleccione la carrera:</label>
-    <select id="carrera" name="carrera">
-        <option>Tec. web</option>
-        <option>Arquitectura</option>
-        <option>Medicina</option>
-    </select>
+    <!-- SELECCIONAR CARRERA -->
+    <div class="filtrosTabla">
 
-    <div>
+        <!-- Filtro 1 -->
+        <div class="desplegables">
+            <button class="desplegables-boton">
+                Seleccionar Carrera <span class="caret">▼</span>
+            </button>
+            <ul class="dropdown-opciones">
+                <li><a href="#">Tecnicatura en Desarrollo Web</a></li>
+                <li><a href="#">Tecnicatura en Diseño Gráfico</a></li>
+                <li><a href="#">Licenciatura en Sistemas</a></li>
+            </ul>
+        </div>
 
-        <span>Materias aprobadas</span>
+        <!-- Filtro 2 -->
+        <div class="desplegables">
+            <button class="desplegables-boton">
+                Orden alfabético <span class="caret">▼</span>
+            </button>
+            <ul class="desplegables-opciones">
+                <li><a href="#">A → Z</a></li>
+                <li><a href="#">Z → A</a></li>
+            </ul>
+        </div>
 
-        <table border="1">
-            <tr>
-                <td>Codigo</td>
-                <td>Materia</td>
-                <td>Fecha</td>
-                <td>Nota</td>
-                <td>Acta</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
-
-        <a href="#">Certificado de aprobadas</a>
+        <!-- Filtro 3 -->
+        <div class="desplegables">
+            <button class="desplegables-boton">
+                Orden por fecha <span class="caret">▼</span>
+            </button>
+            <ul class="desplegables-opciones">
+                <li><a href="#">Más reciente</a></li>
+                <li><a href="#">Más antigua</a></li>
+            </ul>
+        </div>
 
     </div>
 
-    <div>
-        <!--INSERTAR GRAFICO DE TORTA-->
+    <!-- TABLA -->
+    <div class="contenedorTabla">
+        <h2>Materias Aprobadas</h2>
+        <div class="scrollTabla">
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Materia</th>
+                        <th>Fecha</th>
+                        <th>Nota</th>
+                        <th>Acta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>7442</td><td>Diseño Gráfico</td><td>12/12/25</td><td>8</td><td>24</td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                </tbody>
+            </table>
+        </div>
+        <button class="boton">Certificado de aprobadas</button>
     </div>
 
-    <!-- Enlaza tu JS si corresponde -->
-    <script src="../main.js" defer></script>
-    <!--METER POPAPS POR INCRUSTACION DE JS-->
+</main>
 
 </body>
-
 </html>

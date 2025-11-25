@@ -1,0 +1,320 @@
+/* ------------------ GENERAL ------------------ */
+* {
+    box-sizing: border-box; /* fundamental para responsive sin scroll horizontal */
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #e8f3fa;
+    overflow-x: hidden; /* evita scroll horizontal */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border-bottom: 1px solid #9993;
+}
+
+.header a img {
+    height: 60px;
+    width: auto;
+}
+
+/* bloque del usuario */
+.contenedor {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.infoUsuario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.nombre {
+    font-weight: bold;
+}
+
+.cierreDeSesion {
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+.iconoDeUsuario {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* ------------------ CONTENIDO ------------------ */
+.contenido {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* ------------------ DROPDOWNS ------------------ */
+.filtrosTabla {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.desplegables {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+}
+
+.desplegables::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: transparent; /* puente invisible */
+}
+
+/* Botón */
+.desplegables-boton {
+    padding: 8px 18px;
+    border-radius: 20px;
+    background: #c7eef6;
+    border: none;
+    font-size: 14px;
+    color: #003a57;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.2s ease;
+}
+
+.desplegables-boton:hover,
+.desplegables-boton:focus {
+    background: #0f93b0;
+    color: white;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.caret {
+    font-size: 12px;
+    transition: transform 0.2s ease;
+}
+
+/* Menú desplegable */
+.desplegables-opciones {
+    display: none;
+    position: absolute;
+    top: calc(100% + 0px);
+    left: 0;
+    width: 100%;       /* siempre ancho del botón */
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(14,40,55,0.12);
+    padding: 6px 0;
+    z-index: 9999;
+}
+
+/* Mostrar menú al hover o focus */
+.desplegables:hover .desplegables-opciones,
+.desplegables:focus-within .desplegables-opciones {
+    display: block;
+}
+
+/* Rotación de flecha */
+.desplegables:hover .caret,
+.desplegables:focus-within .caret {
+    transform: rotate(180deg);
+}
+
+/* Items del menú */
+.desplegables-opciones li {
+    list-style: none;
+}
+
+.desplegables-opciones li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #0f4b57;
+    font-size: 14px;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+
+.desplegables-opciones li a:hover {
+    background: #e0f0fa;
+}
+
+/* ------------------ TABLA ------------------ */
+.contenedorTabla {
+    background: #d7e7f2;
+    padding: 15px 20px;
+    border-radius: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow-x: hidden; /* quitar scroll horizontal */
+}
+
+.contenedorTabla h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.scrollTabla {
+    overflow-x: auto;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    table-layout: fixed;
+}
+
+.tabla th,
+.tabla td {
+    border: 1px solid black;
+    height: 32px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+/* BOTÓN CERTIFICADO */
+.boton {
+    margin-top: 10px;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 0;
+    background: #0f93b0;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.boton:hover {
+    background: #077896;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* ------------------ RESPONSIVE GENERAL ------------------ */
+@media (max-width: 1100px) {
+    .contenido {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+    }
+
+    .filtrosTabla {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .desplegables {
+        width: 100%;
+    }
+
+    .desplegables-boton {
+        width: 100%;
+    }
+
+    .desplegables-opciones {
+        width: 100%;
+    }
+
+    .contenedorTabla {
+        width: 100%;
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    .tabla th,
+    .tabla td {
+        font-size: 13px;
+        padding: 6px 8px;
+    }
+
+    .boton {
+        width: 80%;
+        padding: 8px 0;
+    }
+}
+
+/* ------------------ RESPONSIVE CELULARES ------------------ */
+@media (max-width: 780px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+    }
+
+    .header a img {
+        height: 45px;
+    }
+
+    .contenedor {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .nombre {
+        font-size: 14px;
+    }
+
+    .cierreDeSesion {
+        font-size: 12px;
+    }
+
+    .iconoDeUsuario {
+        width: 34px;
+        height: 34px;
+    }
+
+    .desplegables-boton {
+        width: 100%;
+    }
+
+    .desplegables-opciones {
+        top: calc(100% + 5px);
+        width: 100%;
+    }
+
+    .contenedorTabla {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .tabla th,
+    .tabla td {
+        font-size: 12px;
+        padding: 4px 6px;
+    }
+
+    .boton {
+        width: 100%;
+    }
+}

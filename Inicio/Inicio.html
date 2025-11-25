@@ -1,98 +1,155 @@
-<!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Inicio</title>
-    <!-- Enlaza tu CSS si corresponde -->
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Inicio - UTN Avellaneda (Replica)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
 
-    <header>
-
-        <a href="./Inicio.html"><img src="./src/logo.png"></a>
-
-        <img src="./src/casita.png">
-
-        <nav>
-            <ul>
-                <li>Estado academico</li>
-                <ul>
-                    <li><a href="./materias-en-curso/materias-en-curso.html">Materias en curso</a></li>
-                    <li><a href="./materias-regularizadas/materias-regularizadas.html">Materias en regularizadas</a>
-                    </li>
-                    <li><a href="./historial-academico/historial-academico.html">Historial academico</a></li>
-                </ul>
-
-                <li>Inscripciones</li>
-                <ul>
-                    <li><a href="inscripcion-materias/inscripcion-materias.html">Inscripciones a materias</a></li>
-                    <li><a href="#">Inscripciones a examenes</a></li>
-                </ul>
-                <li>Tramites</li>
-                <ul>
-                    <li>Cursado en otra region</li>
-                    <li>pase a otra region</li>
-                    <li>Equivalencias</li>
-                    <li>Constancia de materias aprobadas</li>
-                    <li>Simultaneidad de carreras</li>
-                    <li>Certificado de alumno regular</li>
-                    <li>Boletin estudiantil</li>
-                </ul>
+  <header class="cabecera">
+    <div class="headerIzq">
+      <a class="logo-link" href="./Inicio.html">
+        <img src="./src/logo.png" alt="UTN Avellaneda logo" class="logo-img">
+      </a>
+      <button class="botonDeInicio" aria-label="Inicio">
+        <img src="./src/casita.png" alt="Inicio">
+      </button>
+      <nav class="inicio">
+        <ul class="desplegables">
+          <li class="opciones desplegar">
+            <button class="seccion">Estado académico <span class="caret">▾</span></button>
+            <ul class="menu">
+              <li><a href="#">Materias en curso</a></li>
+              <li><a href="#">Materias regularizadas</a></li>
+              <li><a href="#">Historial académico</a></li>
             </ul>
-        </nav>
+          </li>
+          <li class="opciones desplegar">
+            <button class="seccion">Inscripciones <span class="caret">▾</span></button>
+            <ul class="menu">
+              <li><a href="#">Inscripción a materias</a></li>
+              <li><a href="#">Inscripción a exámenes</a></li>
+            </ul>
+          </li>
+          <li class="opciones desplegar">
+            <button class="seccion">Trámites <span class="caret">▾</span></button>
+            <ul class="menu">
+              <li><a href="#">Cursado en otra región</a></li>
+              <li><a href="#">Pase a otra región</a></li>
+              <li><a href="#">Equivalencias</a></li>
+              <li><a href="#">Constancia de materias aprobadas</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="headerDerecho">
+      <div class="usuario">
+        <span class="nombre">ROMERO, Yesica Romina</span>
+        <a class="cierreDeSesion" href="#">Cerrar sesión</a>
+      </div>
+      <img src="src/usuario.png" alt="Foto usuario" class="iconoDeUsuario">
+    </div>
+  </header>
 
-        <nav>
-            <span>ROMERO, YESICA ROMINA</span>
-            <a>Cerrar sesion</a>
-            <img src="../sources/fotologin">
-        </nav>
-
-    </header>
-
-    <aside>
-
-        <span>ANUNCIOS</span>
-
+  <div class="contenedorDeAnuncios">
+    <aside class="sidebar">
+      <h2>Anuncios</h2>
     </aside>
 
-    <article>
+    <main class="barraDeEstado">
+      <section class="contenedorEstado1">
+        <div class="estado">
+          Estado del alumno: <strong class="estadoActivo">ACTIVO</strong>
+        </div>
+      </section>
 
-        <div>
-            <span>Estado del alumno: ACTIVO</span>
+ 
+      <section class="tarjeta grande">
+        <div class="materias-lateral">
+          <button class="carrera-titulo active" data-carrera="carrera1">Tec. en Desarrollo Web</button>
+          <button class="carrera-titulo" data-carrera="carrera2">Tec. en Sistemas</button>
         </div>
 
-        <img src="src/carpeta.png">
-        <span>Tec. Desarrollo Web</span>
-
-        <div>
-            <img src="./src/calendario.png">
-            <div>
-                <span>Calendario academico</span>
-            </div>
+        <div class="tarjeta largo" id="infoCarrera">
+          <ul class="carrera1">
+            <li><strong>Programación I</strong> - Profesor: Juan Pérez - Horario: Lunes 9-11 - Nota: 8</li>
+            <li><strong>Matemática</strong> - Profesor: Ana Gómez - Horario: Martes 10-12 - Nota: 7</li>
+          </ul>
+          <ul class="carrera2" style="display:none;">
+            <li><strong>Estructuras de Datos</strong> - Profesor: Carlos López - Horario: Miércoles 14-16 - Nota: 9</li>
+            <li><strong>Base de Datos</strong> - Profesor: Laura Sánchez - Horario: Jueves 10-12 - Nota: 8</li>
+          </ul>
         </div>
-        <div>
-            <img src="./src/plan.png">
-            <div>
-                <span>Plan de estudio</span>
-            </div>
-        </div>
-        <div>
-            <img src="./src/docs.png">
-            <div>
-                <span>Documentos</span>
-            </div>
-        </div>
+      </section>
 
-    </article>
 
-    <!-- Enlaza tu JS si corresponde -->
-    <script src="script.js" defer></script>
-    <!--METER POPAPS POR INCRUSTACION DE JS-->
+      <section class="accionesDeAbajo">
+        <article class="tarjetaOpcion">
+          <div class="icono"><img src="./src/calendario.png" alt=""></div>
+          <div class="nombreDeOpcionl">Calendario académico</div>
+        </article>
+        <article class="tarjetaOpcion">
+          <div class="icono"><img src="./src/plan.png" alt=""></div>
+          <div class="nombreDeOpcionl">Plan de estudio</div>
+        </article>
+        <article class="tarjetaOpcion">
+          <div class="icono"><img src="./src/docs.png" alt=""></div>
+          <div class="nombreDeOpcionl">Documentos</div>
+        </article>
+      </section>
+    </main>
+  </div>
 
+ 
+ <script>
+
+  document.querySelectorAll('.opciones.desplegar').forEach(drop => {
+    const btn = drop.querySelector('.seccion');
+    const menu = drop.querySelector('.menu');
+
+    let timeout;
+
+ 
+    drop.addEventListener('mouseenter', () => {
+      clearTimeout(timeout);
+      drop.classList.add('open');
+    });
+
+    drop.addEventListener('mouseleave', () => {
+      timeout = setTimeout(() => drop.classList.remove('open'), 150);
+    });
+
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (drop.classList.contains('open')) {
+        drop.classList.remove('open');
+      } else {
+        drop.classList.add('open');
+      }
+    });
+  });
+
+
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.opciones.desplegar')) {
+      document.querySelectorAll('.opciones.desplegar.open').forEach(d => d.classList.remove('open'));
+    }
+  });
+
+
+  const botonesCarrera = document.querySelectorAll('.carrera-titulo');
+  botonesCarrera.forEach(btn => {
+    btn.addEventListener('click', () => {
+      botonesCarrera.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const carrera = btn.getAttribute('data-carrera');
+      document.querySelectorAll('#infoCarrera ul').forEach(ul => ul.style.display = 'none');
+      document.querySelector('#infoCarrera .' + carrera).style.display = 'block';
+    });
+  });
+</script>
 </body>
-
 </html>
