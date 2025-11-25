@@ -7,54 +7,96 @@
     <title>Inicio</title>
     <!-- Enlaza tu CSS si corresponde -->
     <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kedebideri:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
-        <a href="../Inicio.html"><img src="../../sources/logo.png"></a>
+    <header class="header-materias">
 
-        <span>Inscripcion a materias</span>
+        <div class="header-izq">
+            <a href="../Inicio.html"><img src="../../sources/logo.png" alt="Logo UTN" class="logo-header"></a>
+            <span class="titulo-header">Inscripcion a materias</span>
+        </div>
 
-        <nav>
-            <span>ROMERO, YESICA ROMINA</span>
-            <a>Cerrar sesion</a>
-            <img src="../sources/fotologin">
-        </nav>
+        <div class="header-der">
+            <div class="usuario-info">
+                <span class="nombre-usuario">Yesica Romina</span>
+                <a href="#" class="cerrar-sesion">Cerrar sesión</a>
+            </div>
+            <img src="../src/usuario.png" alt="Usuario" class="icono-usuario">
+        </div>
+
     </header>
 
-    <div>
+    <hr class="linea-fina">
 
-        <span>Seleccione la materia</span>
-        <div>1</div>
 
-        <span>Seleccione comision</span>
-        <div>2</div>
 
-        <div>3</div>
+
+
+    <div id="barra-estado">
+
+        <div id="pri">
+            <span>Seleccione una materia</span>
+            <div class="number">1</div>
+        </div>
+
+        <div id="seg">
+            <span>Seleccione comision</span>
+            <div class="number">2</div>
+        </div>
+
+        <div id="ter">
+            <span></span>
+            <div class="number">3</div>
+        </div>
 
     </div>
+
+
+
+
 
     <div id="primera-etapa">
-        <h1>Selecciona la materia</h1>
+        <h1>Selecciona al menos una materia</h1>
 
-        <input type="radio" id="1" name="mate">
-        <label for="1">Ingles tecnico I</label>
+        <div class="mat">
+            <input type="checkbox" id="1" name="mate">
+            <label for="1">Ingles tecnico I</label>
+        </div>
 
-        <input type="radio" id="2" name="mate">
-        <label for="2">Diseño grafico</label>
+        <div class="mat">
+            <input type="checkbox" id="2" name="mate">
+            <label for="2">Diseño grafico</label>
+        </div>
 
-        <input type="radio" id="3" name="mate">
-        <label for="3">Bases de datos</label>
+        <div class="mat">
+            <input type="checkbox" id="3" name="mate">
+            <label for="3">Bases de datos I</label>
+        </div>
 
-        <input type="submit" value="pasa-a-2">
+        <span class="errores">Seleccione al menos una materia</span>
+
+        <input type="submit" value="SIGUIENTE" id="submit1">
     </div>
 
+
+
+
+
+
+
     <div id="segunda-etapa">
+
         <h1>Selecciona la comision</h1>
 
-        <div>
-            <span>Turno:</span>
+        <div id="filtro">
+            <span>Turno |</span>
 
             <input type="radio" id="a" name="turno">
             <label for="a">Mañana</label>
@@ -64,47 +106,145 @@
 
             <input type="radio" id="c" name="turno">
             <label for="c">Noche</label>
+
+            <input type="radio" id="d" name="turno" checked>
+            <label for="d">Todas</label>
         </div>
 
-        <div>
-            <label for="4">Bases de datos I</label>
 
-            <div>
-                <span>Comision: 987-977</span>
-                <span>Horario: Jueves 8 a 12</span>
-                <span>Modalidad: Semipresencial</span>
-                <input type="radio" id="4" name="comi">
+
+
+
+
+
+
+        <div class="materia">
+
+            <h2>Ingles tecnico I</h2>
+
+            <div class="comisiones">
+
+                <div class="comi">
+                    <input type="radio" id="1-4" name="mat1">
+                    <label for="1-4">
+                        <span>Comision: 987-977</span>
+                        <span>Horario: Jueves 08 a 12</span>
+                        <span>Modalidad: Semipresencial</span>
+                    </label>
+                </div>
+
+                <div class="comi">
+                    <input type="radio" id="2-4" name="mat1">
+                    <label for="2-4">
+                        <span>Comision: 987-977</span>
+                        <span>Horario: Jueves 14 a 18</span>
+                        <span>Modalidad: Semipresencial</span>
+                    </label>
+                </div>
+
+                <div class="comi">
+                    <input type="radio" id="3-4" name="mat1">
+                    <label for="3-4">
+                        <span>Comision: 987-977</span>
+                        <span>Horario: Jueves 19 a 23</span>
+                        <span>Modalidad: Semipresencial</span>
+                    </label>
+                </div>
+
             </div>
 
         </div>
 
-        <div>
-            <label for="5">Diseño grafico</label>
+        <div class="materia">
 
-            <div>
-                <span>Comision: 987-977</span>
-                <span>Horario: Jueves 8 a 12</span>
-                <span>Modalidad: Semipresencial</span>
-                <input type="radio" id="5" name="comi">
+            <h2>Diseño grafico</h2>
+
+            <div class="comisiones">
+
+                <div class="comi">
+                    <input type="radio" id="1-5" name="mat2">
+                    <label for="1-5">
+                        <span>Comision: 987-977</span>
+                        <span>Horario: Jueves 08 a 12</span>
+                        <span>Modalidad: Semipresencial</span>
+                    </label>
+                </div>
+
+                <div class="comi">
+                    <input type="radio" id="2-5" name="mat2">
+                    <label for="2-5">
+                        <span>Comision: 987-977</span>
+                        <span>Horario: Jueves 14 a 18</span>
+                        <span>Modalidad: Semipresencial</span>
+                    </label>
+                </div>
+
+                <div class="comi">
+                    <input type="radio" id="3-5" name="mat2">
+                    <label for="3-5">
+                        <span>Comision: 987-977</span>
+                        <span>Horario: Jueves 19 a 23</span>
+                        <span>Modalidad: Semipresencial</span>
+                    </label>
+                </div>
+
             </div>
 
         </div>
 
-        <div>
-            <label for="6">Ingles tecnico I</label>
+        <div class="materia">
 
-            <div>
-                <span>Comision: 987-977</span>
-                <span>Horario: Jueves 8 a 12</span>
-                <span>Modalidad: Semipresencial</span>
-                <input type="radio" id="6" name="comi">
+            <h2>Bases de datos I</h2>
+
+            <div class="comisiones">
+
+                <div class="comi">
+                    <input type="radio" id="1-6" name="mat3">
+                    <label for="1-6">
+                        <span>Comision: 987-977</span>
+                        <span>Horario: Jueves 08 a 12</span>
+                        <span>Modalidad: Semipresencial</span>
+                    </label>
+                </div>
+
+                <div class="comi">
+                    <input type="radio" id="2-6" name="mat3">
+                    <label for="2-6">
+                        <span>Comision: 987-977</span>
+                        <span>Horario: Jueves 14 a 18</span>
+                        <span>Modalidad: Semipresencial</span>
+                    </label>
+                </div>
+
+                <div class="comi">
+                    <input type="radio" id="3-6" name="mat3">
+                    <label for="3-6">
+                        <span>Comision: 987-977</span>
+                        <span>Horario: Jueves 19 a 23</span>
+                        <span>Modalidad: Semipresencial</span>
+                    </label>
+                </div>
+
             </div>
 
         </div>
 
-        <input type="submit" value="pasa-a-1">
-        <input type="submit" value="pasa-a-3">
+        <span class="errores">Seleccione al menos una comision en cada materia seleccionada</span>
+
+        <input type="submit" value="ATRAS" id="atras2">
+        <input type="submit" value="CONFIRMAR" id="submit2">
     </div>
+
+
+
+
+
+
+
+
+
+
+
 
     <div id="tercera-etapa">
 
@@ -112,8 +252,11 @@
 
         <h1>¡Te inscribiste con exito!</h1>
 
-        <a href="#">Descargar comprobante</a>
-        <a href="#">Volver al inicio</a>
+        <div id="conti">
+            <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1" target="_blank"
+                id="comprobante">Descargar comprobante</a>
+            <a href="../Inicio.html" id="volver">Volver al inicio</a>
+        </div>
 
     </div>
 
@@ -125,7 +268,7 @@
 
 
     <!-- Enlaza tu JS si corresponde -->
-    <script src="script.js" defer></script>
+    <script src="main.js"></script>
     <!--METER POPAPS POR INCRUSTACION DE JS-->
 
 </body>
