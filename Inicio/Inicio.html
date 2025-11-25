@@ -1,4 +1,5 @@
 <html lang="es">
+
 <head>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -8,9 +9,10 @@
   <link rel="stylesheet" href="styles.css" />
   <title>Inicio - UTN Avellaneda Home</title>
 </head>
+
 <body>
 
-<header class="cabecera">
+  <header class="cabecera">
     <div class="headerIzq">
       <a class="logo-link" href="./Inicio.html">
         <img src="./src/logo.png" alt="UTN Avellaneda logo" class="logo-img">
@@ -47,15 +49,15 @@
         </ul>
       </nav>
     </div>
-        <div class="header-der">
-            <div class="usuario-info">
-                <span class="nombre-usuario">Yesica Romina</span>
-                <a href="#" class="cerrar-sesion">Cerrar sesión</a>
-            </div>
-            <img src="./src/usuario.png" alt="Usuario" class="icono-usuario">
-        </div>
-    </header>
-    <hr class="linea-fina">
+    <div class="header-der">
+      <div class="usuario-info">
+        <span class="nombre-usuario">Yesica Romina</span>
+        <a href="#" class="cerrar-sesion">Cerrar sesión</a>
+      </div>
+      <img src="./src/usuario.png" alt="Usuario" class="icono-usuario">
+    </div>
+  </header>
+  <hr class="linea-fina">
 
   <div class="contenedorDeAnuncios">
     <aside class="sidebar">
@@ -69,7 +71,7 @@
         </div>
       </section>
 
- 
+
       <section class="tarjeta grande">
         <div class="materias-lateral">
           <button class="carrera-titulo active" data-carrera="carrera1">Tec. en Desarrollo Web</button>
@@ -106,53 +108,54 @@
     </main>
   </div>
 
- 
- <script>
 
-  document.querySelectorAll('.opciones.desplegar').forEach(drop => {
-    const btn = drop.querySelector('.seccion');
-    const menu = drop.querySelector('.menu');
+  <script>
 
-    let timeout;
+    document.querySelectorAll('.opciones.desplegar').forEach(drop => {
+      const btn = drop.querySelector('.seccion');
+      const menu = drop.querySelector('.menu');
 
- 
-    drop.addEventListener('mouseenter', () => {
-      clearTimeout(timeout);
-      drop.classList.add('open');
-    });
+      let timeout;
 
-    drop.addEventListener('mouseleave', () => {
-      timeout = setTimeout(() => drop.classList.remove('open'), 150);
-    });
 
-    btn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      if (drop.classList.contains('open')) {
-        drop.classList.remove('open');
-      } else {
+      drop.addEventListener('mouseenter', () => {
+        clearTimeout(timeout);
         drop.classList.add('open');
+      });
+
+      drop.addEventListener('mouseleave', () => {
+        timeout = setTimeout(() => drop.classList.remove('open'), 150);
+      });
+
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (drop.classList.contains('open')) {
+          drop.classList.remove('open');
+        } else {
+          drop.classList.add('open');
+        }
+      });
+    });
+
+
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.opciones.desplegar')) {
+        document.querySelectorAll('.opciones.desplegar.open').forEach(d => d.classList.remove('open'));
       }
     });
-  });
 
 
-  document.addEventListener('click', (e) => {
-    if (!e.target.closest('.opciones.desplegar')) {
-      document.querySelectorAll('.opciones.desplegar.open').forEach(d => d.classList.remove('open'));
-    }
-  });
-
-
-  const botonesCarrera = document.querySelectorAll('.carrera-titulo');
-  botonesCarrera.forEach(btn => {
-    btn.addEventListener('click', () => {
-      botonesCarrera.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const carrera = btn.getAttribute('data-carrera');
-      document.querySelectorAll('#infoCarrera ul').forEach(ul => ul.style.display = 'none');
-      document.querySelector('#infoCarrera .' + carrera).style.display = 'block';
+    const botonesCarrera = document.querySelectorAll('.carrera-titulo');
+    botonesCarrera.forEach(btn => {
+      btn.addEventListener('click', () => {
+        botonesCarrera.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const carrera = btn.getAttribute('data-carrera');
+        document.querySelectorAll('#infoCarrera ul').forEach(ul => ul.style.display = 'none');
+        document.querySelector('#infoCarrera .' + carrera).style.display = 'block';
+      });
     });
-  });
-</script>
+  </script>
 </body>
+
 </html>
