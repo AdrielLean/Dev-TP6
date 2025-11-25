@@ -138,7 +138,7 @@ body {
     padding: 8px 10px;
     border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 6px;
-    color: #033b49;
+    color: #000000;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
     font-family: "Kedebideri", sans-serif;
     font-weight: 300;
@@ -171,7 +171,7 @@ body {
 .titulo-materia h3 {
     margin: 0;
     font-size: 1.4rem;
-    color: #0b3b4b;
+    color: #007A8B;
     font-weight: 700;
 }
 
@@ -469,7 +469,7 @@ body {
 
 .cal-title {
     font-weight: 700;
-    color: #013a53;
+    color: #007A8B;
 }
 
 .cal-nav {
