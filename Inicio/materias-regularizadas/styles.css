@@ -266,16 +266,17 @@ body {
     max-width: 1300px;
     margin: 0 auto;           /* Centra el contenedor completo */
     padding: 2rem 1rem;
+    
 }
 
 /* INDIVIDUAL CARD */
 .card {
-    background: var(--light-color-bgcard, #e8f1f9);
+    background: #DCEBF4;
     padding: 1.5rem;
     border-radius: 12px;
     width: 330px;
     position: relative;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
 }
 
 /* BOTÓN FINAL */
@@ -287,7 +288,7 @@ body {
 }
 
 .boton-final button {
-    background-color: #007bff;
+    background-color: #016099;
     color: white;
     padding: 12px 24px;
     font-size: 16px;
@@ -298,7 +299,7 @@ body {
 }
 
 .boton-final button:hover {
-    background-color: #0056b3;
+    background-color: #014a78;
 }
 
 
