@@ -74,6 +74,7 @@ document.getElementById("submit2").addEventListener("click", function (e) {
         document.getElementById("barra-estado").style.background = "linear-gradient(to right, #016099 0%, #016099 50%, #016099 51%, #016099 100%)";
         document.getElementById("seg").style.backgroundColor = "#016099";
         document.getElementById("ter").style.backgroundColor = "#016099";
+        document.getElementById("hola").style.display = "none";
     } else {
         console.log("NO HAY COMISION SELECCIONADA");
 

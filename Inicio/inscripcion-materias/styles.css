@@ -426,9 +426,9 @@ body {
 
 #atras2 {
     margin: 50px 0px 0px 0px;
-    background-color: #016099;
+    background-color: #ce3a3a;
 
-    border: 1px solid #014a78;
+    border: 1px solid #ce3a3a;
     border-radius: 6px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
 
@@ -440,7 +440,9 @@ body {
 }
 
 #atras2:hover {
-    background-color: #014a78;
+    background-color: #802424;
+    border: 1px solid #802424;
+
 }
 
 
@@ -548,6 +550,22 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+#can {
+    background-color: #ce3a3a;
+}
+
+#can:hover {
+    background-color: #802424;
+}
 
 
 
