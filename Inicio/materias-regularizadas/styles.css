@@ -207,23 +207,49 @@ header h1 {
 .amarillo { background: #e4e26a; }
 .rojo { background: #ce5a4a; }
 
+
+/* CONTENEDOR DE CARDS */
 .cards {
     display: flex;
-    justify-content: center;     /* centra las cards */
+    justify-content: center;
     align-items: flex-start;
-    gap: 2rem;                   /* separacion razonable */
+    gap: 2rem;
     flex-wrap: wrap;
-    max-width: 1300px;           /* evita que se separen demasiado */
-    margin: 0 auto;              /* centra el contenedor */
+    max-width: 1300px;
+    margin: 0 auto;           /* Centra el contenedor completo */
     padding: 2rem 1rem;
 }
 
+/* INDIVIDUAL CARD */
 .card {
     background: var(--light-color-bgcard, #e8f1f9);
     padding: 1.5rem;
     border-radius: 12px;
-    width: 330px;                /* tamaño consistente */
+    width: 330px;
     position: relative;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* BOTÓN FINAL */
+.boton-final {
+    width: 100%;
+    display: flex;
+    justify-content: center;  /* Centra el botón */
+    margin-top: 25px;         /* Espacio después de las cards */
+}
+
+.boton-final button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-final button:hover {
+    background-color: #0056b3;
 }
 
