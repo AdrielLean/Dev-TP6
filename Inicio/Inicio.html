@@ -1,14 +1,16 @@
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Inicio - UTN Avellaneda (Replica)</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kedebideri:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <title>Inicio - UTN Avellaneda Home</title>
 </head>
 <body>
 
-  <header class="cabecera">
+<header class="cabecera">
     <div class="headerIzq">
       <a class="logo-link" href="./Inicio.html">
         <img src="./src/logo.png" alt="UTN Avellaneda logo" class="logo-img">
@@ -21,15 +23,15 @@
           <li class="opciones desplegar">
             <button class="seccion">Estado académico <span class="caret">▾</span></button>
             <ul class="menu">
-              <li><a href="#">Materias en curso</a></li>
-              <li><a href="#">Materias regularizadas</a></li>
-              <li><a href="#">Historial académico</a></li>
+              <li><a href="materias-en-curso/materias-en-curso.html">Materias en curso</a></li>
+              <li><a href="materias-regularizadas/materias-regularizadas.html">Materias regularizadas</a></li>
+              <li><a href="historial-academico/historial-academico.html">Historial académico</a></li>
             </ul>
           </li>
           <li class="opciones desplegar">
             <button class="seccion">Inscripciones <span class="caret">▾</span></button>
             <ul class="menu">
-              <li><a href="#">Inscripción a materias</a></li>
+              <li><a href="inscripcion-materias/inscripcion-materias.html">Inscripción a materias</a></li>
               <li><a href="#">Inscripción a exámenes</a></li>
             </ul>
           </li>
@@ -45,14 +47,15 @@
         </ul>
       </nav>
     </div>
-    <div class="headerDerecho">
-      <div class="usuario">
-        <span class="nombre">ROMERO, Yesica Romina</span>
-        <a class="cierreDeSesion" href="#">Cerrar sesión</a>
-      </div>
-      <img src="src/usuario.png" alt="Foto usuario" class="iconoDeUsuario">
-    </div>
-  </header>
+        <div class="header-der">
+            <div class="usuario-info">
+                <span class="nombre-usuario">Yesica Romina</span>
+                <a href="#" class="cerrar-sesion">Cerrar sesión</a>
+            </div>
+            <img src="./src/usuario.png" alt="Usuario" class="icono-usuario">
+        </div>
+    </header>
+    <hr class="linea-fina">
 
   <div class="contenedorDeAnuncios">
     <aside class="sidebar">
