@@ -1,22 +1,24 @@
+body {
+   background-image: url("src/fondo.png");
+   background-size: cover;
+   background-repeat: no-repeat;
 
-body{
-    background-image: url("src/fondo.png");
-    background-size: cover;
-    background-repeat: no-repeat;
 
-    
 }
-html, body {
+
+html,
+body {
    height: 100%;
    margin: 0;
    padding: 0;
    overflow: hidden;
 }
-.textdecoration{
+
+.textdecoration {
    text-decoration: none;
 }
 
-.container{
+.container {
    width: 100%;
    height: 100vh;
    display: flex;
@@ -25,29 +27,41 @@ html, body {
    padding-top: 150px;
 }
 
-.logo{
-      display: flex;
-      margin-top: 10px;
-      margin-left: 10px;   
-}
-h2{
-    text-align: center;
+.logo {
+   display: flex;
+   margin-top: 10px;
+   margin-left: 10px;
 }
 
-.contenido-form{
+h2 {
+   text-align: center;
+   font-family: "Kedebideri", sans-serif;
+   font-weight: 500;
+   font-style: normal;
+}
+
+h4 {
+   color: #333333;
+   font-family: "Kedebideri", sans-serif;
+   font-weight: 300;
+   font-style: normal;
+   font-size: 15px;
+}
+
+.contenido-form {
    width: 100%;
    max-width: 400px;
-   background-color:#f1faff;
+   background-color: #f1faff;
    padding: 20px 40px 30px;
    border-radius: 25px;
    text-align: justify;
    box-shadow: rgba(51, 51, 51, 0.2) 0px 4px 6px -1px;
 
-   
+
 }
 
 /* Inputs centrados, placeholder a la izquierda */
-.contenedor-texto{
+.contenedor-texto {
    background-color: #9bbdd5;
    margin: 15px 0;
    border-radius: 7px;
@@ -56,7 +70,8 @@ h2{
    overflow: hidden;
    align-items: flex-start;
    margin-top: 20px;
-   padding-left: 8px; /* Mueve el texto un poco a la derecha */
+   padding-left: 8px;
+   /* Mueve el texto un poco a la derecha */
    box-shadow: rgba(51, 51, 51, 0.2) 0px 4px 6px -1px;
 }
 
@@ -75,12 +90,17 @@ input {
    text-align: left;
    margin-top: 10px;
    margin-bottom: 30px;
+   font-family: "Kedebideri", sans-serif;
+   font-weight: 500;
+   font-style: normal;
 }
+
 .nav-link {
    text-decoration: none;
    color: #333;
    font-size: 14px;
 }
+
 .nav-link:hover {
    text-decoration: underline;
 }
@@ -91,18 +111,26 @@ input {
    display: flex;
    justify-content: center;
    margin-top: -40px;
+   font-family: "Kedebideri", sans-serif;
+   font-weight: 400;
+   font-style: normal;
 }
 
 
-input::placeholder{
+input::placeholder {
    color: #333333;
    font-size: 14px;
    font-weight: 500;
    text-align: justify;
+   font-family: "Kedebideri", sans-serif;
+   font-weight: 400;
 }
-.boton:hover{ background-color: #014a78 }
 
-.boton{
+.boton:hover {
+   background-color: #014a78
+}
+
+.boton {
    background-color: #016099;
    border: none;
    padding: 15px;
@@ -113,11 +141,11 @@ input::placeholder{
    cursor: pointer;
    margin-top: 40px;
    text-decoration: none;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: rgba(51, 51, 51, 0.1) 0px 4px 6px -1px;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: rgba(51, 51, 51, 0.1) 0px 4px 6px -1px;
 }
 
 /* Responsive para tablets */
@@ -127,6 +155,7 @@ input::placeholder{
       padding: 20px 40px 40px;
       margin-top: 70px;
    }
+
    .container {
       padding: 0;
    }
@@ -140,14 +169,17 @@ input::placeholder{
       border-radius: 12px;
       margin-top: 50px;
    }
+
    .container {
       padding: 0;
    }
+
    .boton {
       width: 100%;
       padding: 15px 0;
       font-size: 15px;
    }
+
    .contenedor-texto {
       padding-left: 2px;
    }

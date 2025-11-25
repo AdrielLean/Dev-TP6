@@ -17,6 +17,30 @@ body {
     overflow: hidden;
 }
 
+.kedebideri-regular {
+    font-family: "Kedebideri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kedebideri-medium {
+    font-family: "Kedebideri", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.kedebideri-semibold {
+    font-family: "Kedebideri", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.kedebideri-bold {
+    font-family: "Kedebideri", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
 /* Header personalizado para Materias en Curso */
 .header-materias {
     width: 100vw;
@@ -43,6 +67,9 @@ body {
     margin-top: 30px;
     margin-left: -50px;
     font-size: xx-large;
+    font-family: "Kedebideri", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .header-der {
@@ -63,12 +90,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    font-family: "Kedebideri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .nombre-usuario {
     font-size: 1.1rem;
-    font-weight: 600;
-    font-style: bold;
+    font-weight: 700;
+    font-style: normal;
+    font-family: "Kedebideri", sans-serif;
 }
 
 .cerrar-sesion {
@@ -95,7 +126,10 @@ body {
     align-items: flex-start;
     gap: 4px;
     margin-left: 110px;
-
+    font-family: "Kedebideri", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
 }
 
 .filtro select {
@@ -107,6 +141,10 @@ body {
     border-radius: 6px;
     color: #033b49;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    font-family: "Kedebideri", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
 }
 
 /* Estilos para las tarjetas de materias */
@@ -118,7 +156,9 @@ body {
     margin-left: 110px;
     margin-right: 100px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-
+    font-family: "Kedebideri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .parte-de-arriba-carreras {
@@ -126,12 +166,14 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 50px;
+    font-weight: 600;
 }
 
 .titulo-materia h3 {
     margin: 0;
     font-size: 1.4rem;
     color: #0b3b4b;
+    font-weight: 700;
 }
 
 .meta-materia {
@@ -160,6 +202,9 @@ body {
     margin-left: 110px;
     margin-top: 14px;
     margin-bottom: 20px;
+    font-family: "Kedebideri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 
 }
 
@@ -411,6 +456,9 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    font-family: "Kedebideri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .calendar-header {
@@ -473,6 +521,10 @@ body {
     text-align: center;
 }
 
+span {
+    padding: 3px;
+}
+
 .add-activity {
     background: #016099;
     color: #fff;
@@ -480,6 +532,9 @@ body {
     padding: 10px 16px;
     border-radius: 8px;
     cursor: pointer;
+    font-family: "Kedebideri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .add-activity:hover {

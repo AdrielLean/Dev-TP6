@@ -132,6 +132,9 @@ body {
   margin-top: 30px;
   margin-left: -50px;
   font-size: xx-large;
+  font-family: "Kedebideri", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .header-der {
@@ -152,12 +155,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  font-family: "Kedebideri", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .nombre-usuario {
   font-size: 1.1rem;
-  font-weight: 600;
-  font-style: bold;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Kedebideri", sans-serif;
 }
 
 .cerrar-sesion {
@@ -186,7 +193,10 @@ body {
   align-items: flex-start;
   gap: 4px;
   margin-left: 130px;
-
+  font-family: "Kedebideri", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
 }
 
 .filtro select {
@@ -198,6 +208,10 @@ body {
   border-radius: 6px;
   color: #033b49;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  font-family: "Kedebideri", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
 }
 
 /* CARDS */
@@ -215,6 +229,9 @@ body {
   /* centra el contenedor */
   padding: 2rem 1rem;
   margin-left: 60px;
+  font-family: "Kedebideri", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .card {
@@ -225,12 +242,13 @@ body {
   /* tamaño consistente */
   position: relative;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  font-weight: 600;
 }
 
 .titulo {
   font-size: 1.4rem;
   margin-bottom: 8px;
-  font-weight: 600;
+  font-weight: 700;
   color: #0b3b4b;
 }
 
