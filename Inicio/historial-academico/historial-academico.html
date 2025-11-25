@@ -28,7 +28,15 @@
             <div class="usuario-info">
 
                 <span class="nombre-usuario">Yesica Romina</span>
-                <a href="../../login/login.html" id="cerrar-sesion">Cerrar sesión</a>
+                <nav class="usuario-links">
+                    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1"
+                        target="_blank" class="ayuda-link"
+                        style="text-decoration:none;color:inherit;outline:none;box-shadow:none;border:none;background:none;cursor:pointer;font-weight:400;"
+                        onmouseover="this.style.textDecoration='underline'"
+                        onmouseout="this.style.textDecoration='none'">Ayuda</a>
+                    <span class="separador"> - </span>
+                    <a href="../../login/login.html" id="cerrar-sesion">Cerrar sesión</a>
+                </nav>
 
             </div>
             <img src="../src/usuario.png" alt="Usuario" class="icono-usuario">
@@ -112,7 +120,7 @@
             </div>
 
             <button class="boton">Certificado de aprobadas</button>
-            
+
         </div>
 
 
@@ -145,55 +153,62 @@
 
         <div class="contenedorTabla" id="grafic">
             <h2>Resumen de materias</h2>
-            
+
             <div style="margin-bottom: 1.5rem;">
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1rem; font-size: 0.9rem;">
-                <div><div id="apro"></div>Aprobadas: <strong id="numAprobadas">5</strong></div>
-                <div><div id="final"></div>Finales: <strong id="numFinales">3</strong></div>
-                <div><div id="nocur"></div>No cursadas: <strong id="numNoCursadas">42</strong></div>
-            </div>
-            
-            <div style="display: flex; height: 20px; border-radius: 4px; overflow: hidden; gap: 2px;">
-                <div id="barAprobadas" style="background-color: #4CAF50;"></div>
-                <div id="barFinales" style="background-color: #FFC107;"></div>
-                <div id="barNoCursadas" style="background-color: #E0E0E0;"></div>
-            </div>
+                <div
+                    style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1rem; font-size: 0.9rem;">
+                    <div>
+                        <div id="apro"></div>Aprobadas: <strong id="numAprobadas">5</strong>
+                    </div>
+                    <div>
+                        <div id="final"></div>Finales: <strong id="numFinales">3</strong>
+                    </div>
+                    <div>
+                        <div id="nocur"></div>No cursadas: <strong id="numNoCursadas">42</strong>
+                    </div>
+                </div>
+
+                <div style="display: flex; height: 20px; border-radius: 4px; overflow: hidden; gap: 2px;">
+                    <div id="barAprobadas" style="background-color: #4CAF50;"></div>
+                    <div id="barFinales" style="background-color: #FFC107;"></div>
+                    <div id="barNoCursadas" style="background-color: #E0E0E0;"></div>
+                </div>
             </div>
         </div>
 
         <script>
-        const TOTAL = 50;
-        const spanAprobadas = document.getElementById('numAprobadas');
-        const spanFinales = document.getElementById('numFinales');
-        const spanNoCursadas = document.getElementById('numNoCursadas');
-        const barAprobadas = document.getElementById('barAprobadas');
-        const barFinales = document.getElementById('barFinales');
-        const barNoCursadas = document.getElementById('barNoCursadas');
+            const TOTAL = 50;
+            const spanAprobadas = document.getElementById('numAprobadas');
+            const spanFinales = document.getElementById('numFinales');
+            const spanNoCursadas = document.getElementById('numNoCursadas');
+            const barAprobadas = document.getElementById('barAprobadas');
+            const barFinales = document.getElementById('barFinales');
+            const barNoCursadas = document.getElementById('barNoCursadas');
 
-        function contarAprobadas() {
-            const filas = document.querySelectorAll('.tabla tbody tr');
-            return filas.length;
-        }
+            function contarAprobadas() {
+                const filas = document.querySelectorAll('.tabla tbody tr');
+                return filas.length;
+            }
 
-        function actualizar() {
-            const aprobadas = contarAprobadas();
-            const finales = 3;
-            const noCursadas = TOTAL - aprobadas - finales;
-            
-            const pAprobadas = (aprobadas / TOTAL) * 100;
-            const pFinales = (finales / TOTAL) * 100;
-            const pNoCursadas = (noCursadas / TOTAL) * 100;
-            
-            spanAprobadas.textContent = aprobadas;
-            spanFinales.textContent = finales;
-            spanNoCursadas.textContent = Math.max(0, noCursadas);
-            
-            barAprobadas.style.width = pAprobadas + '%';
-            barFinales.style.width = pFinales + '%';
-            barNoCursadas.style.width = pNoCursadas + '%';
-        }
+            function actualizar() {
+                const aprobadas = contarAprobadas();
+                const finales = 3;
+                const noCursadas = TOTAL - aprobadas - finales;
 
-        actualizar();
+                const pAprobadas = (aprobadas / TOTAL) * 100;
+                const pFinales = (finales / TOTAL) * 100;
+                const pNoCursadas = (noCursadas / TOTAL) * 100;
+
+                spanAprobadas.textContent = aprobadas;
+                spanFinales.textContent = finales;
+                spanNoCursadas.textContent = Math.max(0, noCursadas);
+
+                barAprobadas.style.width = pAprobadas + '%';
+                barFinales.style.width = pFinales + '%';
+                barNoCursadas.style.width = pNoCursadas + '%';
+            }
+
+            actualizar();
         </script>
 
 
