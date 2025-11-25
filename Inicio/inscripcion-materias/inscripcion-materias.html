@@ -42,7 +42,7 @@
     <div id="barra-estado">
 
         <div id="pri">
-            <span>Seleccione la materia</span>
+            <span>Seleccione una materia</span>
             <div class="number">1</div>
         </div>
 
@@ -63,7 +63,7 @@
 
 
     <div id="primera-etapa">
-        <h1>Selecciona la materia</h1>
+        <h1>Selecciona al menos una materia</h1>
 
         <div class="mat">
             <input type="checkbox" id="1" name="mate">
@@ -79,6 +79,8 @@
             <input type="checkbox" id="3" name="mate">
             <label for="3">Bases de datos I</label>
         </div>
+
+        <span class="errores">Seleccione al menos una materia</span>
 
         <input type="submit" value="SIGUIENTE" id="submit1">
     </div>
@@ -227,6 +229,7 @@
 
         </div>
 
+        <span class="errores">Seleccione al menos una comision en cada materia seleccionada</span>
 
         <input type="submit" value="ATRAS" id="atras2">
         <input type="submit" value="CONFIRMAR" id="submit2">

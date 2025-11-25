@@ -27,8 +27,16 @@ document.getElementById("submit1").addEventListener("click", function (e) {
         document.getElementById("seg").style.backgroundColor = "aqua";
         document.getElementById("ter").style.backgroundColor = "gray";
 
+        const elementos = document.querySelectorAll(".errores");
+        elementos.forEach((el) => {
+            el.style.display = "none";
+        });
     } else {
         console.log("NO HAY MATERIA SELECCIONADA");
+        const elementos = document.querySelectorAll(".errores");
+        elementos.forEach((el) => {
+            el.style.display = "block";
+        });
     }
 });
 
@@ -65,6 +73,12 @@ document.getElementById("submit2").addEventListener("click", function (e) {
         document.getElementById("ter").style.backgroundColor = "aqua";
     } else {
         console.log("NO HAY COMISION SELECCIONADA");
+
+        console.log("NO HAY MATERIA SELECCIONADA");
+        const elementos = document.querySelectorAll(".errores");
+        elementos.forEach((el) => {
+            el.style.display = "block";
+        });
     }
 });
 
@@ -105,7 +119,7 @@ document.querySelectorAll('input[name="turno"]').forEach((radio) => {
 
         // --- ACA VAN LOS CAMBIOS DE ESTILOS ---
         // Ejemplo: cambiar fondo del contenedor según filtro
-        const titulos  = document.querySelectorAll(".materia h2");
+        const titulos = document.querySelectorAll(".materia h2");
         if (index === 0 || index === 1 || index === 2) {
             titulos.forEach((titulo) => {
                 console.log(titulo);

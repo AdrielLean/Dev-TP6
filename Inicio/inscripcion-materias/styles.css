@@ -221,6 +221,10 @@ body {
     width: 100%;
 }
 
+.mat label:hover {
+    background-color: rgb(255, 94, 94);
+}
+
 /* Estilo cuando el radio está seleccionado */
 .mat input[type="checkbox"]:checked+label {
     background-color: #00ffff;
@@ -473,6 +477,19 @@ body {
 #volver:hover {
     background-color: rgb(255, 94, 94);
 }
+
+
+.errores {
+    display: none;
+    position: static;
+    left: 850px;
+    color: red;
+}
+
+
+
+
+
 
 
 
