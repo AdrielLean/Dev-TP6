@@ -1,90 +1,4 @@
-/* Archivo styles.css */
-/*
-  background: #e9f2f7;
-  color: #1a1a1a;
-}
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-}
-
-.logo {
-  font-size: 32px;
-  font-weight: bold;
-}
-
-.user {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.user img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #000;
-}
-
-h1 {
-  margin: 0 0 10px 40px;
-  font-size: 32px;
-}
-
-.selector {
-  margin-left: 40px;
-  margin-bottom: 30px;
-}
-
-select {
-  padding: 10px;
-  font-size: 14px;
-  border-radius: 6px;
-  border: 1px solid #aaa;
-  width: 280px;
-}
-
-.cards {
-  display: flex;
-  gap: 40px;
-  padding: 0 40px;
-}
-
-.card {
-  background: #ddeaf2;
-  padding: 30px;
-  width: 280px;
-  border-radius: 12px;
-  position: relative;
-  min-height: 260px;
-}
-
-.barra {
-  position: absolute;
-  right: 15px;
-  top: 20px;
-  width: 10px;
-  height: 80%;
-  border-radius: 6px;
-}
-
-.verde { background: #6ac259; }
-.amarillo { background: #e3d657; }
-.rojo { background: #d96a5b; }
-
-.titulo {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.estado {
-  margin-top: 20px;
-  font-weight: bold;
-}*/
-/* Reset */
 
 .linea-fina {
   border: none;
@@ -97,12 +11,15 @@ select {
   margin-right: 100px;
 }
 
+
 html,
 body {
-  height: 100%;
+  min-height: 100%;
+  height: auto;
   margin: 0;
   padding: 0;
 }
+
 
 
 /* HEADER */
@@ -337,4 +254,150 @@ body {
     text-decoration: none;
     margin-top: 2px;
   }
+}
+
+/* CONTENEDOR DE CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 0 auto;           /* Centra el contenedor completo */
+    padding: 2rem 1rem;
+}
+
+/* INDIVIDUAL CARD */
+.card {
+    background: var(--light-color-bgcard, #e8f1f9);
+    padding: 1.5rem;
+    border-radius: 12px;
+    width: 330px;
+    position: relative;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* BOTÓN FINAL */
+.boton-final {
+    width: 100%;
+    display: flex;
+    justify-content: center;  /* Centra el botón */
+    margin-top: 25px;         /* Espacio después de las cards */
+}
+
+.boton-final button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-final button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Responsive: móviles (<=600px) */
+@media (max-width: 600px) {
+
+    /* ===== HEADER ===== */
+    .header-materias {
+        align-items: flex-start;
+        gap: 8px;
+        margin-bottom: 5px;
+        padding-bottom: 35px;
+    }
+
+    .header-izq {
+        gap: 12px;
+    }
+
+    .logo-header {
+        height: 30px;
+        margin-bottom: 20px;
+        margin-left: -20px;
+    }
+
+    .titulo-header {
+        font-size: 1.25rem;
+        margin-left: 0;
+    }
+
+    .header-der {
+        align-self: flex-end;
+        gap: 8px;
+    }
+
+    .icono-usuario {
+        width: 34px;
+        height: 34px;
+    }
+
+    .linea-fina {
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-bottom: 36px;
+    }
+
+    .nombre-usuario {
+        font-size: 0.95rem;
+        font-weight: 600;
+        font-style: bold;
+    }
+
+    .cerrar-sesion {
+        font-size: 0.90rem;
+        text-decoration: none;
+        margin-top: 2px;
+    }
+
+
+    /* ===== SELECTOR ===== */
+    .selector select {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+
+    /* ===== CARDS ===== */
+    .cards {
+        flex-direction: column;   /* una debajo de la otra */
+        align-items: center;      /* centradas */
+        gap: 1.5rem;
+        padding: 1rem 0;
+        max-width: 100%;          /* que no limite el ancho */
+    }
+
+    .card {
+        width: 90%;               /* ocupa casi toda la pantalla */
+        max-width: 380px;
+        padding: 1.25rem;
+    }
+
+    /* barra lateral dentro de las cards */
+    .barra {
+        height: 80%;
+        right: 10px;
+    }
+
+
+    /* ===== BOTÓN FINAL ===== */
+    .boton-final {
+        margin-top: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .boton-final button {
+        width: 85%;
+        max-width: 350px;
+        padding: 14px;
+        font-size: 1rem;
+    }
 }
