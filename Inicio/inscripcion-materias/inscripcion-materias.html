@@ -42,12 +42,12 @@
     <div id="barra-estado">
 
         <div id="pri">
-            <span>Seleccione una materia</span>
+            <span id="no-ver">Seleccione una materia</span>
             <div class="number">1</div>
         </div>
 
         <div id="seg">
-            <span>Seleccione comision</span>
+            <span id="hola">Seleccione comision</span>
             <div class="number">2</div>
         </div>
 
@@ -93,10 +93,13 @@
 
     <div id="segunda-etapa">
 
-        <h1>Selecciona la comision</h1>
+        <h1>Seleccione la comision</h1>
 
         <div id="filtro">
             <span>Turno |</span>
+
+            <input type="radio" id="d" name="turno" checked>
+            <label for="d">Todas</label>
 
             <input type="radio" id="a" name="turno">
             <label for="a">Mañana</label>
@@ -107,8 +110,6 @@
             <input type="radio" id="c" name="turno">
             <label for="c">Noche</label>
 
-            <input type="radio" id="d" name="turno" checked>
-            <label for="d">Todas</label>
         </div>
 
 
